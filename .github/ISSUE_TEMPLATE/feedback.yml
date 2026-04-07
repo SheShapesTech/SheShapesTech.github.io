@@ -1,0 +1,44 @@
+name: Website Feedback
+description: Feedback zur She Shapes Tech Website
+title: "[Feedback] "
+labels: ["feedback"]
+body:
+  - type: dropdown
+    id: page
+    attributes:
+      label: Welche Seite betrifft dein Feedback?
+      options:
+        - Home
+        - Events
+        - Über uns
+        - Sponsoren
+        - Kontakt
+        - Allgemein
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Art des Feedbacks
+      options:
+        - Inhalt (Text stimmt nicht / fehlt)
+        - Design (sieht nicht gut aus)
+        - Fehler (etwas funktioniert nicht)
+        - Idee / Verbesserungsvorschlag
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Beschreibung
+      placeholder: Was hast du bemerkt? Was würdest du ändern?
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot (optional)
+      description: Kannst du ein Bild einfügen?
