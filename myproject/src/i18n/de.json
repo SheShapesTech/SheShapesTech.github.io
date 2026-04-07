@@ -1,0 +1,52 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "events": "Events",
+    "about": "Über uns",
+    "sponsors": "Sponsoren",
+    "contact": "Kontakt"
+  },
+  "home": {
+    "subtitle": "Frauen in der Technik @ ZHAW School of Engineering",
+    "intro": "Wir sind eine Gemeinschaft von Frauen in Technologie an der ZHAW School of Engineering. Unser Ziel ist es, uns gegenseitig zu unterstützen, Wissen zu teilen und ein Netzwerk aufzubauen, das alle stärkt."
+  },
+  "about": {
+    "title": "Über uns",
+    "mission_title": "Unsere Mission",
+    "mission": "She Shapes Tech setzt sich dafür ein, Frauen in der Technik zu fördern, zu vernetzen und zu stärken.",
+    "values_title": "Unsere Werte",
+    "values": [
+      { "title": "Gemeinschaft", "desc": "Wir unterstützen uns gegenseitig und schaffen einen Raum, in dem sich alle willkommen fühlen." },
+      { "title": "Empowerment", "desc": "Wir stärken Frauen in technischen Berufen und Studiengängen." },
+      { "title": "Vernetzung", "desc": "Wir bauen Brücken zwischen Studierenden, Alumni und der Industrie." }
+    ]
+  },
+"events": {
+  "title": "Events",
+  "subtitle": "Kommende Veranstaltungen",
+  "learn_more": "Mehr erfahren",
+  "home_desc": "Workshops, Vorträge und Networking-Events für Frauen in der Technik.",
+  "christmas_month": "Dez",
+  "christmas_title": "Christmas Event",
+  "christmas_desc": "Feiert die Weihnachtszeit mit uns! Kommt zusammen, mit Snacks und guter Stimmung."
+},
+  "sponsors": {
+    "title": "Sponsoren",
+    "subtitle": "Unsere Partner und Unterstützer",
+    "intro": "Wir danken unseren Sponsoren, die She Shapes Tech ermöglichen.",
+    "become_title": "Sponsor werden?",
+    "become_cta": "Kontakt aufnehmen"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Wir freuen uns von dir zu hören",
+    "connect": "Verbinde dich mit uns",
+    "teams_desc": "Tritt unserem Teams-Kanal bei",
+    "whatsapp_desc": "Chatte mit uns auf WhatsApp",
+    "coming_soon": "Kommt bald..."
+  },
+  "footer": {
+    "rights": "© 2026 She Shapes Tech. Alle Rechte vorbehalten.",
+    "follow": "Folge uns"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "nav": {
+    "home": "Home",
+    "events": "Events",
+    "about": "About us",
+    "sponsors": "Sponsors",
+    "contact": "Contact"
+  },
+  "home": {
+    "subtitle": "Women in Tech @ ZHAW School of Engineering",
+    "intro": "We are a community of women in technology at ZHAW School of Engineering. Our goal is to support each other, share knowledge, and build a network that empowers everyone."
+  },
+  "about": {
+    "title": "About us",
+    "mission_title": "Our Mission",
+    "mission": "She Shapes Tech is dedicated to empowering, connecting and supporting women in technology.",
+    "values_title": "Our Values",
+    "values": [
+      { "title": "Community", "desc": "We support each other and create a space where everyone feels welcome." },
+      { "title": "Empowerment", "desc": "We strengthen women in technical professions and degree programs." },
+      { "title": "Networking", "desc": "We build bridges between students, alumni and industry." }
+    ]
+  },
+"events": {
+  "title": "Events",
+  "subtitle": "Upcoming Events",
+  "learn_more": "Learn More",
+  "home_desc": "Workshops, talks, and networking events for women in tech.",
+  "christmas_month": "Dec",
+  "christmas_title": "Christmas Event",
+  "christmas_desc": "Celebrate the Christmas season with us! Get together with snacks and good vibes."
+},
+  "sponsors": {
+    "title": "Sponsors",
+    "subtitle": "Our partners and supporters",
+    "intro": "We thank our sponsors who make She Shapes Tech possible.",
+    "become_title": "Become a sponsor?",
+    "become_cta": "Get in touch"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "We'd love to hear from you",
+    "connect": "Connect With Us",
+    "teams_desc": "Join our Teams channel",
+    "whatsapp_desc": "Chat with us on WhatsApp",
+    "coming_soon": "Coming soon..."
+  },
+  "footer": {
+    "rights": "© 2026 She Shapes Tech. All rights reserved.",
+    "follow": "Follow us"
+  }
+}

@@ -1,0 +1,102 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { getLangFromUrl, useTranslations } from '@/i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<BaseLayout title={t.about.title}>
+  <div class="page">
+    <div class="page-header">
+      <h1>{t.about.title}</h1>
+    </div>
+
+    <section class="mission">
+      <h2>{t.about.mission_title}</h2>
+      <p>{t.about.mission}</p>
+    </section>
+
+    <section class="values">
+      <h2>{t.about.values_title}</h2>
+      <div class="values-grid">
+        {t.about.values.map((value) => (
+          <div class="value-card">
+            <h3>{value.title}</h3>
+            <p>{value.desc}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+  }
+
+  .page-header {
+    margin-bottom: 3rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--foreground);
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--foreground);
+    margin-bottom: 1rem;
+  }
+
+  .mission {
+    background: var(--muted);
+    border-left: 4px solid var(--primary);
+    border-radius: var(--radius);
+    padding: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .mission p {
+    font-size: 1.1rem;
+    color: var(--muted-foreground);
+    line-height: 1.8;
+  }
+
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .value-card {
+    background: var(--muted);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    transition: all 0.2s;
+  }
+
+  .value-card:hover {
+    border-color: var(--primary);
+    box-shadow: 0 4px 20px rgba(108, 134, 204, 0.15);
+  }
+
+  .value-card h3 {
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+  }
+
+  .value-card p {
+    font-size: 0.9rem;
+    color: var(--muted-foreground);
+    line-height: 1.6;
+  }
+</style>

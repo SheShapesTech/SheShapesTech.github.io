@@ -1,0 +1,259 @@
+---
+import { getLangFromUrl, useTranslations, getLocalizedPath } from '@/i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const currentPath = Astro.url.pathname;
+
+const switchLang = lang === 'de' ? 'en' : 'de';
+const switchPath = lang === 'de'
+  ? '/en' + (currentPath === '/' ? '' : currentPath)
+  : currentPath.replace(/^\/en/, '') || '/';
+
+interface Props {
+  title?: string;
+}
+const { title = 'She Shapes Tech' } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang={lang}>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title} | She Shapes Tech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style is:global>
+    :root {
+      --primary: #6c86cc;
+      --primary-dark: #5570b8;
+      --foreground: #28292a;
+      --background: #ffffff;
+      --muted: #f4f6fb;
+      --muted-foreground: #6b7280;
+      --border: #e5e9f5;
+      --radius: 0.75rem;
+      --font: 'Nunito', sans-serif;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: var(--font);
+      background: var(--background);
+      color: var(--foreground);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    main { flex: 1; }
+
+    a { color: inherit; text-decoration: none; }
+
+    img { max-width: 100%; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href={getLocalizedPath('/', lang)} class="logo">
+        <img src="/logo.svg" alt="She Shapes Tech" height="36" />
+        <span>She Shapes Tech</span>
+      </a>
+
+      <nav>
+        <a href={getLocalizedPath('/', lang)} class={currentPath === '/' || currentPath === '/en' || currentPath === '/en/' ? 'active' : ''}>{t.nav.home}</a>
+        <a href={getLocalizedPath('/events', lang)} class={currentPath.includes('/events') ? 'active' : ''}>{t.nav.events}</a>
+        <a href={getLocalizedPath('/about', lang)} class={currentPath.includes('/about') ? 'active' : ''}>{t.nav.about}</a>
+        <a href={getLocalizedPath('/sponsors', lang)} class={currentPath.includes('/sponsors') ? 'active' : ''}>{t.nav.sponsors}</a>
+        <a href={getLocalizedPath('/contact', lang)} class={currentPath.includes('/contact') ? 'active' : ''}>{t.nav.contact}</a>
+      </nav>
+
+      <div class="header-right">
+        <a href={switchPath} class="lang-switch">
+          {switchLang.toUpperCase()}
+        </a>
+        <button class="mobile-menu-btn" id="menuBtn" aria-label="Toggle menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <nav class="mobile-nav" id="mobileNav">
+      <a href={getLocalizedPath('/', lang)} onclick="document.getElementById('mobileNav').classList.remove('open')">{t.nav.home}</a>
+      <a href={getLocalizedPath('/events', lang)} onclick="document.getElementById('mobileNav').classList.remove('open')">{t.nav.events}</a>
+      <a href={getLocalizedPath('/about', lang)} onclick="document.getElementById('mobileNav').classList.remove('open')">{t.nav.about}</a>
+      <a href={getLocalizedPath('/sponsors', lang)} onclick="document.getElementById('mobileNav').classList.remove('open')">{t.nav.sponsors}</a>
+      <a href={getLocalizedPath('/contact', lang)} onclick="document.getElementById('mobileNav').classList.remove('open')">{t.nav.contact}</a>
+      <a href={switchPath}>{switchLang.toUpperCase()}</a>
+    </nav>
+  </header>
+
+  <main>
+    <slot />
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <p>{t.footer.rights}</p>
+      <div class="footer-social">
+        <span>{t.footer.follow}</span>
+        <a href="https://teams.microsoft.com/..." target="_blank" aria-label="MS Teams">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </a>
+        <a href="https://chat.whatsapp.com/KIdNWrZGl5KG2G5Mlc4Zsm" target="_blank" aria-label="WhatsApp">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <style>
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255,255,255,0.9);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .header-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--foreground);
+      white-space: nowrap;
+    }
+
+    nav {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--muted-foreground);
+      transition: color 0.2s;
+    }
+
+    nav a:hover, nav a.active {
+      color: var(--primary);
+    }
+
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .lang-switch {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--primary);
+      border: 2px solid var(--primary);
+      border-radius: 9999px;
+      padding: 0.2rem 0.7rem;
+      transition: all 0.2s;
+    }
+
+    .lang-switch:hover {
+      background: var(--primary);
+      color: white;
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--foreground);
+    }
+
+    .mobile-nav {
+      display: none;
+      flex-direction: column;
+      padding: 1rem 1.5rem;
+      border-top: 1px solid var(--border);
+      gap: 1rem;
+    }
+
+    .mobile-nav.open {
+      display: flex;
+    }
+
+    .mobile-nav a {
+      font-weight: 500;
+      color: var(--muted-foreground);
+    }
+
+    .mobile-nav a:hover {
+      color: var(--primary);
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 1.5rem;
+    }
+
+    .footer-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.875rem;
+      color: var(--muted-foreground);
+    }
+
+    .footer-social {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .footer-social a {
+      color: var(--muted-foreground);
+      transition: color 0.2s;
+    }
+
+    .footer-social a:hover {
+      color: var(--primary);
+    }
+
+    @media (max-width: 768px) {
+      nav { display: none; }
+      .mobile-menu-btn { display: block; }
+    }
+  </style>
+
+  <script>
+    document.getElementById('menuBtn')?.addEventListener('click', () => {
+      document.getElementById('mobileNav')?.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
