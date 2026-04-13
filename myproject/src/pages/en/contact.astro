@@ -17,7 +17,7 @@ const t = useTranslations(lang);
       <h2>{t.contact.connect}</h2>
 
       <div class="links">
-        <a href="https://teams.microsoft.com/l/channel/19%3AXi784Ms6NohX6oO0abKqMh0Py_Kr3x9U7NtXGiziwyM1%40thread.tacv2/General?groupId=c9022015-7217-4b42-a31d-dd1ae8f6bc8e&tenantId=5d1a9f9d-201f-4a10-b983-451cf65cbc1e" target="_blank" class="link-item">
+        <a href="https://teams.microsoft.com/l/channel/19%3AXi784Ms6NohX6oO0abKqMh0Py_Kr3x9U7NtXGiziwyM1%40thread.tacv2/General?groupId=c9022015-7217-4b42-a31d-dd1ae8f6bc8e&tenantId=5d1a9f9d-201f-4a10-b983-451cf65cbc1e" target="_blank" rel="noopener noreferrer" class="link-item">
           <div class="link-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           </div>
@@ -27,7 +27,7 @@ const t = useTranslations(lang);
           </div>
         </a>
 
-        <a href="https://chat.whatsapp.com/KIdNWrZGl5KG2G5Mlc4Zsm" target="_blank" class="link-item">
+        <a href="https://chat.whatsapp.com/KIdNWrZGl5KG2G5Mlc4Zsm" target="_blank" rel="noopener noreferrer" class="link-item">
           <div class="link-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
           </div>
@@ -150,5 +150,7 @@ const t = useTranslations(lang);
   .link-desc {
     font-size: 0.85rem;
     color: var(--muted-foreground);
+    overflow-wrap: break-word;
+    word-break: break-all;
   }
 </style>
