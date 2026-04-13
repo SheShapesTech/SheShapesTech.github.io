@@ -16,16 +16,38 @@ const t = useTranslations(lang);
     <div class="events-list">
       <div class="event-card">
         <div class="event-date-badge">
-          <span class="day">11</span>
-          <span class="month">{t.events.christmas_month}</span>
+          <span class="day">7</span>
+          <span class="month">{t.events.may7_month}</span>
         </div>
         <div class="event-info">
-          <h3>{t.events.christmas_title}</h3>
-          <p>{t.events.christmas_desc}</p>
+          <p class="event-collab">{t.events.may7_subtitle}</p>
+          <h3>{t.events.may7_title}</h3>
+          <p class="event-desc">{t.events.may7_desc}</p>
+          <ul class="event-meta">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              {t.events.may7_date}
+            </li>
+            <li>
+              <a href="https://www.google.com/maps/search/?api=1&query=Theaterstrasse+17%2C+8400+Winterthur" target="_blank" rel="noopener noreferrer" class="meta-map-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                {t.events.may7_location}
+              </a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              {t.events.may7_details}
+            </li>
+          </ul>
+          <div class="event-actions">
+            <a href="https://forms.cloud.microsoft/e/xnr9WkSWst?origin=lprLink" target="_blank" rel="noopener noreferrer" class="btn-primary">
+              {t.events.register} →
+            </a>
+            <a href="/ask-engineers-may7.ics" download class="btn-secondary">
+              {t.events.save_date}
+            </a>
+          </div>
         </div>
-        <a href="https://teams.microsoft.com/..." target="_blank" class="event-btn">
-          {t.events.learn_more} →
-        </a>
       </div>
     </div>
   </div>
@@ -107,28 +129,97 @@ const t = useTranslations(lang);
     flex: 1;
   }
 
-  .event-info h3 {
+  .event-collab {
+    font-size: 0.75rem;
     font-weight: 700;
-    font-size: 1.1rem;
-    margin-bottom: 0.35rem;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.25rem;
   }
 
-  .event-info p {
+  .event-info h3 {
+    font-weight: 800;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .event-desc {
     font-size: 0.9rem;
+    color: var(--muted-foreground);
+    margin-bottom: 1rem;
+  }
+
+  .event-meta {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .event-meta li,
+  .event-meta a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
     color: var(--muted-foreground);
   }
 
-  .event-btn {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: var(--primary);
-    white-space: nowrap;
-    transition: opacity 0.2s;
+  .event-meta svg {
+    width: 15px;
+    height: 15px;
     flex-shrink: 0;
+    color: var(--primary);
   }
 
-  .event-btn:hover {
-    opacity: 0.7;
+  .meta-map-link {
+    text-decoration: underline;
+    text-decoration-color: var(--border);
+    transition: color 0.2s;
+  }
+
+  .meta-map-link:hover {
+    color: var(--primary);
+    text-decoration-color: var(--primary);
+  }
+
+  .event-actions {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .btn-primary {
+    font-size: 0.875rem;
+    font-weight: 700;
+    background: var(--primary);
+    color: white;
+    padding: 0.5rem 1.25rem;
+    border-radius: 9999px;
+    transition: background 0.2s;
+    white-space: nowrap;
+  }
+
+  .btn-primary:hover {
+    background: var(--primary-dark);
+  }
+
+  .btn-secondary {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    padding: 0.5rem 1.25rem;
+    border-radius: 9999px;
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+
+  .btn-secondary:hover {
+    background: var(--primary);
+    color: white;
   }
 
   @media (max-width: 600px) {

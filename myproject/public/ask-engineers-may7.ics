@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//She Shapes Tech//Events//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+DTSTART:20260507T160000Z
+DTEND:20260507T190000Z
+SUMMARY:Ask Engineers – from Study to Industry
+DESCRIPTION:She Shapes Tech × SVIN\n\nTriff Ingenieurinnen aus der Praxis und stell deine Fragen zu Karriere\, Lohn\, Work-Life-Balance und echten Erfahrungen — offen\, ehrlich\, ohne Tabus.\n\nAnmelden: https://forms.cloud.microsoft/e/xnr9WkSWst?origin=lprLink
+LOCATION:Grüner Saal\, Theaterstrasse 17\, 8400 Winterthur
+URL:https://forms.cloud.microsoft/e/xnr9WkSWst?origin=lprLink
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

@@ -25,10 +25,16 @@
   "title": "Events",
   "subtitle": "Kommende Veranstaltungen",
   "learn_more": "Mehr erfahren",
-  "home_desc": "Workshops, Vorträge und Networking-Events für Frauen in der Technik.",
-  "christmas_month": "Dez",
-  "christmas_title": "Christmas Event",
-  "christmas_desc": "Feiert die Weihnachtszeit mit uns! Kommt zusammen, mit Snacks und guter Stimmung."
+  "register": "Anmelden",
+  "home_desc": "Offene Abende, echte Gespräche und neue Kontakte – für Studentinnen an der ZHAW School of Engineering.",
+  "may7_month": "Mai",
+  "may7_title": "Ask Engineers – from Study to Industry",
+  "may7_subtitle": "She Shapes Tech × SVIN",
+  "may7_desc": "Triff Ingenieurinnen aus der Praxis und stell deine Fragen zu Karriere, Lohn, Work-Life-Balance und echten Erfahrungen — offen, ehrlich, ohne Tabus.",
+  "may7_date": "7. Mai 2026, 18:00–21:00 Uhr",
+  "may7_location": "Grüner Saal, Theaterstrasse 17, Winterthur",
+  "may7_details": "Auf Deutsch · Apéro inklusive",
+  "save_date": "Termin speichern"
 },
   "sponsors": {
     "title": "Sponsoren",
