@@ -2,24 +2,31 @@
   "nav": {
     "home": "Home",
     "events": "Events",
-    "about": "About us",
+    "about": "Who we are",
     "sponsors": "Partners",
     "contact": "Contact"
   },
   "home": {
-    "subtitle": "Women in Tech @ ZHAW School of Engineering",
-    "intro": "We are a community of women in technology at ZHAW School of Engineering. Our goal is to support each other, share knowledge, and build a network that empowers everyone."
+    "subtitle": "Studies are knowledge. Network is future.",
+    "intro": "She Shapes Tech connects students at ZHAW School of Engineering — academically, professionally and personally."
   },
   "about": {
-    "title": "About us",
+    "title": "Who we are",
+    "home_desc": "Why we exist and what we stand for.",
+    "vision_title": "Our Vision",
+    "vision": "A community where students at ZHAW SoE shape their place in tech with confidence — open, connected, and on equal terms.",
     "mission_title": "Our Mission",
-    "mission": "She Shapes Tech is dedicated to empowering, connecting and supporting women in technology.",
+    "mission": "She Shapes Tech connects students at ZHAW School of Engineering and promotes collaboration among women in technical and engineering professions.",
     "values_title": "Our Values",
     "values": [
-      { "title": "Community", "desc": "We support each other and create a space where everyone feels welcome." },
-      { "title": "Empowerment", "desc": "We strengthen women in technical professions and degree programs." },
-      { "title": "Networking", "desc": "We build bridges between students, alumni and industry." }
-    ]
+      { "title": "Community", "desc": "We create a space where you don't have to explain yourself. Just belong." },
+      { "title": "Visibility", "desc": "Presence, confidence, professional impact — these are skills you can train. We are the practice ground." },
+      { "title": "Career", "desc": "Connections from your studies stay with you throughout your career. We build this network early." }
+    ],
+    "join_title": "Get Involved",
+    "join_text": "Want to look behind the scenes and actively shape things? We're looking for students who want to get involved — according to your interests: co-organise events, help with the administrative side, or simply be part of it.",
+    "join_benefit": "What you gain: real experience, a strong network, and exchange with women who think like you.",
+    "join_cta": "Get in touch by email"
   },
 "events": {
   "title": "Events",

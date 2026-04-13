@@ -8,9 +8,11 @@ const t = useTranslations(lang);
 
 <BaseLayout title={t.about.title}>
   <div class="page">
-    <div class="page-header">
-      <h1>{t.about.title}</h1>
-    </div>
+
+    <section class="vision">
+      <p class="vision-label">{t.about.vision_title}</p>
+      <blockquote>{t.about.vision}</blockquote>
+    </section>
 
     <section class="mission">
       <h2>{t.about.mission_title}</h2>
@@ -28,6 +30,16 @@ const t = useTranslations(lang);
         ))}
       </div>
     </section>
+
+    <section class="join">
+      <h2>{t.about.join_title}</h2>
+      <p>{t.about.join_text}</p>
+      <p class="join-benefit">{t.about.join_benefit}</p>
+      <a href="mailto:sheshapestech.engineering@zhaw.ch" class="cta-btn">
+        {t.about.join_cta} →
+      </a>
+    </section>
+
   </div>
 </BaseLayout>
 
@@ -36,43 +48,63 @@ const t = useTranslations(lang);
     max-width: 900px;
     margin: 0 auto;
     padding: 4rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
   }
 
-  .page-header {
-    margin-bottom: 3rem;
+  .vision {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: var(--muted);
+    border-radius: var(--radius);
+    border-top: 4px solid var(--primary);
   }
 
-  h1 {
-    font-size: 2.5rem;
-    font-weight: 800;
-    color: var(--foreground);
-  }
-
-  h2 {
-    font-size: 1.5rem;
+  .vision-label {
+    font-size: 0.75rem;
     font-weight: 700;
-    color: var(--foreground);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--primary);
     margin-bottom: 1rem;
   }
 
-  .mission {
-    background: var(--muted);
-    border-left: 4px solid var(--primary);
-    border-radius: var(--radius);
-    padding: 2rem;
-    margin-bottom: 3rem;
+  blockquote {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--foreground);
+    line-height: 1.6;
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  .mission h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--foreground);
+    margin-bottom: 0.75rem;
   }
 
   .mission p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: var(--muted-foreground);
     line-height: 1.8;
+    border-left: 3px solid var(--primary);
+    padding-left: 1.25rem;
+  }
+
+  .values h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--foreground);
+    margin-bottom: 1.25rem;
   }
 
   .values-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 1.5rem;
+    gap: 1.25rem;
   }
 
   .value-card {
@@ -98,5 +130,46 @@ const t = useTranslations(lang);
     font-size: 0.9rem;
     color: var(--muted-foreground);
     line-height: 1.6;
+  }
+
+  .join {
+    background: var(--muted);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 2.5rem;
+  }
+
+  .join h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--foreground);
+    margin-bottom: 1rem;
+  }
+
+  .join p {
+    font-size: 0.95rem;
+    color: var(--muted-foreground);
+    line-height: 1.8;
+    margin-bottom: 0.75rem;
+  }
+
+  .join-benefit {
+    font-weight: 600;
+    color: var(--foreground) !important;
+  }
+
+  .cta-btn {
+    display: inline-block;
+    margin-top: 1.25rem;
+    background: var(--primary);
+    color: white;
+    font-weight: 700;
+    padding: 0.75rem 2rem;
+    border-radius: 9999px;
+    transition: background 0.2s;
+  }
+
+  .cta-btn:hover {
+    background: var(--primary-dark);
   }
 </style>

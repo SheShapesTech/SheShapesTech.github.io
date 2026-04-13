@@ -2,24 +2,31 @@
   "nav": {
     "home": "Startseite",
     "events": "Events",
-    "about": "Über uns",
+    "about": "Wer wir sind",
     "sponsors": "Partner",
     "contact": "Kontakt"
   },
   "home": {
-    "subtitle": "Frauen in der Technik @ ZHAW School of Engineering",
-    "intro": "Wir sind eine Gemeinschaft von Frauen in Technologie an der ZHAW School of Engineering. Unser Ziel ist es, uns gegenseitig zu unterstützen, Wissen zu teilen und ein Netzwerk aufzubauen, das alle stärkt."
+    "subtitle": "Studium ist Wissen. Netzwerk ist Zukunft.",
+    "intro": "She Shapes Tech verbindet Studentinnen an der ZHAW School of Engineering — fachlich, beruflich und persönlich."
   },
   "about": {
-    "title": "Über uns",
+    "title": "Wer wir sind",
+    "home_desc": "Warum wir existieren und wofür wir stehen.",
+    "vision_title": "Unsere Vision",
+    "vision": "Eine Gemeinschaft, in der Studentinnen an der ZHAW SoE ihren Platz in der Technik selbstbewusst gestalten — offen, vernetzt und auf Augenhöhe.",
     "mission_title": "Unsere Mission",
-    "mission": "She Shapes Tech setzt sich dafür ein, Frauen in der Technik zu fördern, zu vernetzen und zu stärken.",
+    "mission": "She Shapes Tech vernetzt Studentinnen an der ZHAW School of Engineering und fördert die Zusammenarbeit von Frauen in technischen und ingenieurwissenschaftlichen Berufen.",
     "values_title": "Unsere Werte",
     "values": [
-      { "title": "Gemeinschaft", "desc": "Wir unterstützen uns gegenseitig und schaffen einen Raum, in dem sich alle willkommen fühlen." },
-      { "title": "Empowerment", "desc": "Wir stärken Frauen in technischen Berufen und Studiengängen." },
-      { "title": "Vernetzung", "desc": "Wir bauen Brücken zwischen Studierenden, Alumni und der Industrie." }
-    ]
+      { "title": "Gemeinschaft", "desc": "Wir schaffen einen Raum, in dem man sich nicht erklären muss. Einfach dazugehören." },
+      { "title": "Sichtbarkeit", "desc": "Präsenz, Auftreten, Selbstsicherheit — das sind Skills, die man trainieren kann. Wir sind das Übungsfeld." },
+      { "title": "Karriere", "desc": "Kontakte aus dem Studium begleiten eine ganze Laufbahn. Wir bauen dieses Netzwerk früh auf." }
+    ],
+    "join_title": "Mitmachen",
+    "join_text": "Du möchtest hinter die Kulissen schauen und aktiv mitgestalten? Wir suchen Studentinnen, die Lust haben mitzumachen — ganz nach deinen Interessen: Events mitorganisieren, beim administrativen Teil mithelfen oder einfach dabei sein.",
+    "join_benefit": "Was du mitnimmst: echte Erfahrung, ein starkes Netzwerk und den Austausch mit Frauen, die gleich denken wie du.",
+    "join_cta": "Melde dich per E-Mail"
   },
 "events": {
   "title": "Events",
