@@ -26,8 +26,10 @@ SheshapesTech.github.io/
 │       ├── index.astro        # Home (DE)
 │       ├── events.astro       # Events (DE)
 │       ├── about.astro        # Über uns (DE)
-│       ├── sponsors.astro     # Sponsoren (DE)
+│       ├── sponsors.astro     # Partner (DE)
 │       ├── contact.astro      # Kontakt (DE)
+│       ├── impressum.astro    # Impressum (DE)
+│       ├── datenschutz.astro  # Datenschutzerklärung (DE)
 │       └── en/                # Englische Versionen (gleiche Struktur)
 ├── astro.config.mjs
 └── package.json
@@ -44,10 +46,9 @@ SheshapesTech.github.io/
 - Alle Texte leben ausschliesslich in `src/i18n/de.json` und `src/i18n/en.json`
 - **Nie** Text direkt in `.astro` Dateien hardcoden
 - Sprache wird aus der URL gelesen via `getLangFromUrl(Astro.url)`
-- DE: `/` `/events` `/about` `/sponsors` `/contact`
-- EN: `/en` `/en/events` `/en/about` `/en/sponsors` `/en/contact`
-- Import-Pfade in `src/pages/`: `../i18n/utils`
-- Import-Pfade in `src/pages/en/`: `../../i18n/utils`
+- DE: `/` `/events` `/about` `/sponsors` `/contact` `/impressum` `/datenschutz`
+- EN: `/en` `/en/events` `/en/about` `/en/sponsors` `/en/contact` `/en/impressum` `/en/datenschutz`
+- Import-Pfade überall (DE und EN): `@/i18n/utils` (Alias für `src/`)
 
 ## Code-Konventionen
 - Sprache: Code-Kommentare auf Englisch, Erklärungen an das Team auf Deutsch
@@ -62,9 +63,17 @@ SheshapesTech.github.io/
 - Build testen: `cd myproject && npm run build`
 - Node.js Version: 22
 
+## Rechtliches
+- She Shapes Tech ist ein **eigenständiger Verein** — handelt nicht im Namen der ZHAW (Rechtsdienst-Auflage)
+- Vereinsadresse (öffentlich): c/o ZHAW School of Engineering, Technikumstrasse 9, 8400 Winterthur
+- Kontakt: sheshapestech.engineering@zhaw.ch (ZHAW-Postfach, verwaltet durch Diversity Beauftragte SoE)
+- Impressum: `/impressum` — bei Adressänderung in `de.json` + `en.json` anpassen
+- Datenschutz: `/datenschutz` — bei Änderungen am Tech-Stack (z.B. Analytics, neue externe Dienste) aktualisieren
+- Google Fonts werden aktuell von Google-Servern geladen (IP-Übermittlung, dokumentiert in Datenschutz) — geplantes Self-Hosting: Issue #18
+
 ## Wichtige Entscheidungen (Kontext)
 - Kein CMS für den Start — Inhalte direkt in JSON-Dateien
 - Meet & Eat wurde bewusst weggelassen (zu temporär für eigene Seite)
 - Team-Seite existiert noch nicht — keine persönlichen Daten online vor Absprache
 - Zweisprachigkeit ist Pflicht, nicht optional
-- Hosting soll später auf ZHAW migriert werden können
+- Hosting soll später auf ZHAW migriert werden können (Alternativen: Cloudflare Pages)
