@@ -3,7 +3,7 @@
     "home": "Home",
     "events": "Events",
     "about": "About us",
-    "sponsors": "Sponsors",
+    "sponsors": "Partners",
     "contact": "Contact"
   },
   "home": {
@@ -37,11 +37,13 @@
   "save_date": "Save to calendar"
 },
   "sponsors": {
-    "title": "Sponsors",
+    "title": "Partners",
     "subtitle": "Our partners and supporters",
-    "intro": "We thank our sponsors who make She Shapes Tech possible.",
-    "become_title": "Become a sponsor?",
-    "become_cta": "Get in touch"
+    "intro": "We thank our partners who make She Shapes Tech possible.",
+    "become_title": "Become a partner?",
+    "become_cta": "Get in touch",
+    "zhaw_desc": "ZHAW School of Engineering — home and supporter of She Shapes Tech.",
+    "svin_desc": "Swiss Association of Women Engineers — connecting women in technical professions."
   },
   "contact": {
     "title": "Contact",

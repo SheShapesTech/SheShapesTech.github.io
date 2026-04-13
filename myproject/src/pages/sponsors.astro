@@ -16,13 +16,20 @@ const t = useTranslations(lang);
     <p class="intro">{t.sponsors.intro}</p>
 
     <div class="sponsors-grid">
-      <div class="sponsor-card">
+      <a href="https://www.zhaw.ch/de/engineering" target="_blank" rel="noopener noreferrer" class="sponsor-card">
+        <div class="sponsor-logo-placeholder">ZHAW</div>
+        <div class="sponsor-info">
+          <h3>ZHAW School of Engineering</h3>
+          <p>{t.sponsors.zhaw_desc}</p>
+        </div>
+      </a>
+      <a href="https://www.svin.ch/" target="_blank" rel="noopener noreferrer" class="sponsor-card">
         <div class="sponsor-logo-placeholder">SVIN</div>
         <div class="sponsor-info">
           <h3>SVIN</h3>
-          <p>Schweizerischer Verband der Ingenieurinnen — unterstützt Frauen in technischen Berufen.</p>
+          <p>{t.sponsors.svin_desc}</p>
         </div>
-      </div>
+      </a>
     </div>
 
     <div class="become-sponsor">
