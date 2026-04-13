@@ -1,0 +1,105 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { getLangFromUrl, useTranslations } from '@/i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<BaseLayout title={t.datenschutz.title}>
+  <div class="page">
+    <div class="page-header">
+      <h1>{t.datenschutz.title}</h1>
+    </div>
+
+    <div class="sections">
+      <section>
+        <h2>{t.datenschutz.intro_title}</h2>
+        <p>{t.datenschutz.intro}</p>
+      </section>
+
+      <section>
+        <h2>{t.datenschutz.responsible_title}</h2>
+        <p>{t.datenschutz.responsible}</p>
+      </section>
+
+      <section>
+        <h2>{t.datenschutz.hosting_title}</h2>
+        <p>{t.datenschutz.hosting}</p>
+      </section>
+
+      <section>
+        <h2>{t.datenschutz.fonts_title}</h2>
+        <p>{t.datenschutz.fonts}</p>
+      </section>
+
+      <section>
+        <h2>{t.datenschutz.external_title}</h2>
+        <p>{t.datenschutz.external}</p>
+      </section>
+
+      <section>
+        <h2>{t.datenschutz.email_title}</h2>
+        <p>{t.datenschutz.email}</p>
+      </section>
+
+      <section>
+        <h2>{t.datenschutz.rights_title}</h2>
+        <p>{t.datenschutz.rights}</p>
+      </section>
+    </div>
+
+    <p class="updated">{t.datenschutz.updated}</p>
+  </div>
+</BaseLayout>
+
+<style>
+  .page {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+  }
+
+  .page-header {
+    margin-bottom: 3rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--foreground);
+  }
+
+  .sections {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  section {
+    border-left: 3px solid var(--primary);
+    padding-left: 1.25rem;
+  }
+
+  h2 {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+    color: var(--foreground);
+    line-height: 1.8;
+  }
+
+  .updated {
+    font-size: 0.8rem;
+    color: var(--muted-foreground);
+    border-left: none;
+  }
+</style>

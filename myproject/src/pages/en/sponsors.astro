@@ -17,14 +17,14 @@ const t = useTranslations(lang);
 
     <div class="sponsors-grid">
       <a href="https://www.zhaw.ch/de/engineering" target="_blank" rel="noopener noreferrer" class="sponsor-card">
-        <div class="sponsor-logo-placeholder">ZHAW</div>
+        <div class="sponsor-badge">Z</div>
         <div class="sponsor-info">
           <h3>ZHAW School of Engineering</h3>
           <p>{t.sponsors.zhaw_desc}</p>
         </div>
       </a>
       <a href="https://www.svin.ch/" target="_blank" rel="noopener noreferrer" class="sponsor-card">
-        <div class="sponsor-logo-placeholder">SVIN</div>
+        <div class="sponsor-badge">S</div>
         <div class="sponsor-info">
           <h3>SVIN</h3>
           <p>{t.sponsors.svin_desc}</p>
@@ -82,10 +82,11 @@ const t = useTranslations(lang);
     background: var(--muted);
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    padding: 2rem;
+    padding: 1.5rem;
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1.25rem;
     transition: all 0.2s;
   }
 
@@ -94,16 +95,18 @@ const t = useTranslations(lang);
     box-shadow: 0 4px 20px rgba(108, 134, 204, 0.15);
   }
 
-  .sponsor-logo-placeholder {
-    height: 80px;
-    background: var(--border);
-    border-radius: 0.5rem;
+  .sponsor-badge {
+    width: 52px;
+    height: 52px;
+    background: var(--primary);
+    border-radius: 0.75rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 700;
-    color: var(--muted-foreground);
-    font-size: 1.2rem;
+    font-weight: 800;
+    color: white;
+    font-size: 1.4rem;
+    flex-shrink: 0;
   }
 
   .sponsor-info h3 {

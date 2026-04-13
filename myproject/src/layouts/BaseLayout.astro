@@ -102,13 +102,21 @@ const { title = 'She Shapes Tech' } = Astro.props;
 
   <footer>
     <div class="footer-inner">
-      <p>{t.footer.rights}</p>
+      <div class="footer-left">
+        <p>{t.footer.rights}</p>
+        <p class="footer-disclaimer">{t.footer.disclaimer}</p>
+        <div class="footer-legal">
+          <a href={getLocalizedPath('/impressum', lang)}>{t.footer.impressum}</a>
+          <span aria-hidden="true">·</span>
+          <a href={getLocalizedPath('/datenschutz', lang)}>{t.footer.datenschutz}</a>
+        </div>
+      </div>
       <div class="footer-social">
         <span>{t.footer.follow}</span>
         <a href="https://teams.microsoft.com/l/channel/19%3AXi784Ms6NohX6oO0abKqMh0Py_Kr3x9U7NtXGiziwyM1%40thread.tacv2/General?groupId=c9022015-7217-4b42-a31d-dd1ae8f6bc8e&tenantId=5d1a9f9d-201f-4a10-b983-451cf65cbc1e" target="_blank" rel="noopener noreferrer" aria-label="MS Teams">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
         </a>
-<a href="https://www.instagram.com/sheshapestech/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <a href="https://www.instagram.com/sheshapestech/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
         </a>
       </div>
@@ -220,12 +228,43 @@ const { title = 'She Shapes Tech' } = Astro.props;
       max-width: 1100px;
       margin: 0 auto;
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: space-between;
       flex-wrap: wrap;
       gap: 1rem;
       font-size: 0.875rem;
       color: var(--muted-foreground);
+    }
+
+    .footer-left {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .footer-disclaimer {
+      font-size: 0.8rem;
+      color: var(--muted-foreground);
+      max-width: 480px;
+    }
+
+    .footer-legal {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      font-size: 0.8rem;
+    }
+
+    .footer-legal a {
+      color: var(--muted-foreground);
+      text-decoration: underline;
+      text-decoration-color: var(--border);
+      transition: color 0.2s;
+    }
+
+    .footer-legal a:hover {
+      color: var(--primary);
+      text-decoration-color: var(--primary);
     }
 
     .footer-social {

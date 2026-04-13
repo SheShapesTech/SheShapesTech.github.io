@@ -60,7 +60,41 @@
 "instagram_desc": "Folge uns auf Instagram"
   },
   "footer": {
-    "rights": "© 2026 She Shapes Tech. Alle Rechte vorbehalten.",
-    "follow": "Folge uns"
+    "rights": "© 2026 She Shapes Tech.",
+    "follow": "Folge uns",
+    "disclaimer": "She Shapes Tech ist ein eigenständiger Verein und handelt nicht im Namen der ZHAW.",
+    "impressum": "Impressum",
+    "datenschutz": "Datenschutz"
+  },
+  "impressum": {
+    "title": "Impressum",
+    "org_title": "Verantwortliche Organisation",
+    "org_name": "She Shapes Tech – Netzwerk der Studentinnen der ZHAW School of Engineering",
+    "address_title": "Postadresse",
+    "address_line1": "c/o ZHAW School of Engineering",
+    "address_line2": "Technikumstrasse 9",
+    "address_line3": "8400 Winterthur",
+    "contact_title": "Kontakt",
+    "legal_title": "Rechtliche Hinweise",
+    "disclaimer": "She Shapes Tech ist ein eigenständiger Verein und handelt nicht im Namen der ZHAW.",
+    "jurisdiction": "Gerichtsstand: Winterthur"
+  },
+  "datenschutz": {
+    "title": "Datenschutzerklärung",
+    "intro_title": "Allgemeines",
+    "intro": "Diese Website wird betrieben von She Shapes Tech. Der Schutz eurer persönlichen Daten ist uns wichtig. Diese Seite informiert darüber, welche Daten beim Besuch unserer Website anfallen und wie sie verarbeitet werden.",
+    "responsible_title": "Verantwortliche Stelle",
+    "responsible": "She Shapes Tech – c/o ZHAW School of Engineering, Technikumstrasse 9, 8400 Winterthur, sheshapestech.engineering@zhaw.ch",
+    "hosting_title": "Hosting (GitHub Pages)",
+    "hosting": "Diese Website wird über GitHub Pages (GitHub Inc., USA) gehostet. Beim Aufruf der Website werden technische Zugriffsdaten erfasst, darunter IP-Adresse, Browsertyp und Abrufzeitpunkt. She Shapes Tech hat keinen Einfluss auf diese Verarbeitung. Es gilt die Datenschutzerklärung von GitHub.",
+    "fonts_title": "Google Fonts",
+    "fonts": "Diese Website verwendet Google Fonts. Die Schriftarten werden von Servern von Google LLC (USA) geladen. Dabei wird eure IP-Adresse an Google übermittelt. Rechtsgrundlage: berechtigtes Interesse an der einheitlichen Darstellung der Website (Art. 31 DSG). Wir planen, Google Fonts künftig lokal einzubinden.",
+    "external_title": "Externe Links und Dienste",
+    "external": "Die Website enthält Links zu externen Diensten (Instagram, Microsoft Teams, Google Maps, Microsoft Forms). Beim Aufrufen dieser Links verlasst ihr unsere Website. She Shapes Tech hat keinen Einfluss auf deren Datenschutzpraktiken. Es gelten die Datenschutzbestimmungen der jeweiligen Anbieter.",
+    "email_title": "Kontakt per E-Mail",
+    "email": "Wenn ihr uns per E-Mail kontaktiert, wird eure Nachricht in einem E-Mail-Postfach gespeichert, das von der ZHAW School of Engineering für She Shapes Tech bereitgestellt wird. Eure Daten werden ausschliesslich zur Bearbeitung eurer Anfrage verwendet.",
+    "rights_title": "Eure Rechte (DSG)",
+    "rights": "Gemäss Schweizer Datenschutzgesetz (DSG) habt ihr das Recht auf Auskunft über eure gespeicherten Daten sowie das Recht auf Berichtigung und Löschung. Für Anfragen wendet euch an: sheshapestech.engineering@zhaw.ch",
+    "updated": "Stand: April 2026"
   }
 }
