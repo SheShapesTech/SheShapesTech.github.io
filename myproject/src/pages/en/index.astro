@@ -6,7 +6,7 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<BaseLayout title={t.nav.home}>
+<BaseLayout title={t.nav.home} description={t.home.description}>
   <section class="hero">
     <img src="/logo.svg" alt="She Shapes Tech" class="hero-logo" />
     <p class="subtitle">{t.home.subtitle}</p>

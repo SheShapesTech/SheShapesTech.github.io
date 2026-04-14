@@ -7,10 +7,12 @@
     "contact": "Kontakt"
   },
   "home": {
+    "description": "She Shapes Tech ist das Netzwerk für Studentinnen an der ZHAW School of Engineering. Vernetzung, Events und gegenseitige Unterstützung — weil gute Kontakte alles verändern.",
     "subtitle": "Studium ist Wissen. Netzwerk ist Zukunft.",
     "intro": "She Shapes Tech verbindet Studentinnen an der ZHAW School of Engineering — weil gute Kontakte alles verändern."
   },
   "about": {
+    "description": "Erfahre mehr über die Vision, Mission und Werte von She Shapes Tech — einem Verein von Frauen für Frauen in der Technik an der ZHAW School of Engineering.",
     "title": "Wer wir sind",
     "home_desc": "Was She Shapes Tech ausmacht — und warum du dazugehörst.",
     "vision_title": "Unsere Vision",
@@ -29,6 +31,7 @@
     "join_cta": "Melde dich per E-Mail"
   },
 "events": {
+  "description": "Veranstaltungen von She Shapes Tech: Networking, Workshops und Talks für Studentinnen an der ZHAW School of Engineering.",
   "title": "Events",
   "subtitle": "Kommende Veranstaltungen",
   "learn_more": "Mehr erfahren",
@@ -44,6 +47,7 @@
   "save_date": "Termin speichern"
 },
   "sponsors": {
+    "description": "Unsere Partnerinnen und Partner ermöglichen She Shapes Tech. Gemeinsam stärken wir Frauen in technischen Berufen an der ZHAW School of Engineering.",
     "title": "Partner",
     "subtitle": "Unsere Partner und Unterstützerinnen",
     "intro": "Wir danken unseren Partnerinnen und Partnern, die She Shapes Tech ermöglichen.",
@@ -53,6 +57,7 @@
     "svin_desc": "Schweizerische Vereinigung der Ingenieurinnen — vernetzt Frauen in technischen Berufen."
   },
   "contact": {
+    "description": "Nimm Kontakt mit She Shapes Tech auf — per Teams oder Instagram. Wir freuen uns von dir zu hören.",
     "title": "Kontakt",
     "subtitle": "Wir freuen uns von dir zu hören",
     "connect": "Verbinde dich mit uns",
@@ -67,6 +72,7 @@
     "datenschutz": "Datenschutz"
   },
   "impressum": {
+    "description": "Impressum des Vereins She Shapes Tech, c/o ZHAW School of Engineering, Technikumstrasse 9, 8400 Winterthur.",
     "title": "Impressum",
     "org_title": "Verantwortliche Organisation",
     "org_name": "She Shapes Tech – Netzwerk der Studentinnen der ZHAW School of Engineering",
@@ -80,6 +86,7 @@
     "jurisdiction": "Gerichtsstand: Winterthur"
   },
   "datenschutz": {
+    "description": "Datenschutzerklärung von She Shapes Tech: Welche Daten wir beim Besuch unserer Website erheben und wie wir sie verarbeiten.",
     "title": "Datenschutzerklärung",
     "intro_title": "Allgemeines",
     "intro": "Diese Website wird betrieben von She Shapes Tech. Der Schutz eurer persönlichen Daten ist uns wichtig. Diese Seite informiert darüber, welche Daten beim Besuch unserer Website anfallen und wie sie verarbeitet werden.",

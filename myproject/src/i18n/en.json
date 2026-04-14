@@ -7,10 +7,12 @@
     "contact": "Contact"
   },
   "home": {
+    "description": "She Shapes Tech is the network for students at ZHAW School of Engineering. Networking, events and mutual support — because good connections change everything.",
     "subtitle": "Studies are knowledge. Network is future.",
     "intro": "She Shapes Tech connects students at ZHAW School of Engineering — because good connections change everything."
   },
   "about": {
+    "description": "Learn more about the vision, mission and values of She Shapes Tech — a community of women for women in tech at ZHAW School of Engineering.",
     "title": "Who we are",
     "home_desc": "What makes She Shapes Tech — and why you belong.",
     "vision_title": "Our Vision",
@@ -29,6 +31,7 @@
     "join_cta": "Get in touch by email"
   },
 "events": {
+  "description": "Events by She Shapes Tech: networking, workshops and talks for students at ZHAW School of Engineering.",
   "title": "Events",
   "subtitle": "Upcoming Events",
   "learn_more": "Learn More",
@@ -44,6 +47,7 @@
   "save_date": "Save to calendar"
 },
   "sponsors": {
+    "description": "Our partners make She Shapes Tech possible. Together we empower women in technical professions at ZHAW School of Engineering.",
     "title": "Partners",
     "subtitle": "Our partners and supporters",
     "intro": "We thank our partners who make She Shapes Tech possible.",
@@ -53,6 +57,7 @@
     "svin_desc": "Swiss Association of Women Engineers — connecting women in technical professions."
   },
   "contact": {
+    "description": "Get in touch with She Shapes Tech — via Teams or Instagram. We'd love to hear from you.",
     "title": "Contact",
     "subtitle": "We'd love to hear from you",
     "connect": "Connect With Us",
@@ -67,6 +72,7 @@
     "datenschutz": "Privacy Policy"
   },
   "impressum": {
+    "description": "Legal notice of She Shapes Tech, c/o ZHAW School of Engineering, Technikumstrasse 9, 8400 Winterthur, Switzerland.",
     "title": "Legal Notice",
     "org_title": "Responsible Organisation",
     "org_name": "She Shapes Tech – Network of Students at ZHAW School of Engineering",
@@ -80,6 +86,7 @@
     "jurisdiction": "Place of jurisdiction: Winterthur, Switzerland"
   },
   "datenschutz": {
+    "description": "Privacy policy of She Shapes Tech: what data we collect when you visit our website and how we process it.",
     "title": "Privacy Policy",
     "intro_title": "General",
     "intro": "This website is operated by She Shapes Tech. The protection of your personal data is important to us. This page explains what data is collected when you visit our website and how it is processed.",
