@@ -17,7 +17,9 @@ const t = useTranslations(lang);
 
     <div class="sponsors-grid">
       <a href="https://www.zhaw.ch/de/engineering" target="_blank" rel="noopener noreferrer" class="sponsor-card">
-        <div class="sponsor-badge">Z</div>
+        <div class="sponsor-badge sponsor-badge--logo">
+          <img src="/zhaw_blue.png" alt="ZHAW" />
+        </div>
         <div class="sponsor-info">
           <h3>ZHAW School of Engineering</h3>
           <p>{t.sponsors.zhaw_desc}</p>
@@ -30,6 +32,15 @@ const t = useTranslations(lang);
           <p>{t.sponsors.svin_desc}</p>
         </div>
       </a>
+    </div>
+
+    <div class="funding-section">
+      <h2>{t.sponsors.funding_title}</h2>
+      <p class="funding-claim">{t.sponsors.funding_claim}</p>
+      <div class="funding-logos">
+        <img src="/zhaw_blue.png" alt="ZHAW" class="funding-logo funding-logo--zhaw" />
+        <img src="/swissuniversities-vector-logo.png" alt="swissuniversities" class="funding-logo funding-logo--swissuniversities" />
+      </div>
     </div>
 
     <div class="become-sponsor">
@@ -96,8 +107,8 @@ const t = useTranslations(lang);
   }
 
   .sponsor-badge {
-    width: 52px;
-    height: 52px;
+    width: 72px;
+    height: 72px;
     background: var(--primary);
     border-radius: 0.75rem;
     display: flex;
@@ -107,6 +118,18 @@ const t = useTranslations(lang);
     color: white;
     font-size: 1.4rem;
     flex-shrink: 0;
+  }
+
+  .sponsor-badge--logo {
+    background: white;
+    border: 1px solid var(--border);
+    padding: 8px;
+  }
+
+  .sponsor-badge--logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 
   .sponsor-info h3 {
@@ -146,4 +169,47 @@ const t = useTranslations(lang);
   .cta-btn:hover {
     background: var(--primary-dark);
   }
+
+  .funding-section {
+    border-top: 1px solid var(--border);
+    padding-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .funding-section h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--foreground);
+  }
+
+  .funding-claim {
+    font-size: 0.9rem;
+    color: var(--muted-foreground);
+    margin-bottom: 1.5rem;
+  }
+
+  .funding-logos {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+
+  .funding-logo {
+    object-fit: contain;
+    display: block;
+  }
+
+  .funding-logo--zhaw {
+    height: 48px;
+    width: auto;
+  }
+
+  .funding-logo--swissuniversities {
+    height: 36px;
+    width: auto;
+  }
+
 </style>
