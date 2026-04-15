@@ -124,6 +124,16 @@ const pageTitle = `${title} | She Shapes Tech`;
   </main>
 
   <footer>
+    <div class="footer-sip">
+      <div class="footer-sip-inner">
+        <span class="footer-sip-claim">{t.footer.sip_claim}</span>
+        <span class="footer-sip-divider" aria-hidden="true">|</span>
+        <div class="footer-sip-logos">
+          <img src="/zhaw_blue.png" alt="ZHAW" class="footer-sip-logo footer-sip-logo--zhaw" />
+          <img src="/swissuniversities-vector-logo.png" alt="swissuniversities" class="footer-sip-logo footer-sip-logo--swissuniversities" />
+        </div>
+      </div>
+    </div>
     <div class="footer-inner">
       <div class="footer-left">
         <p>{t.footer.rights}</p>
@@ -244,10 +254,57 @@ const pageTitle = `${title} | She Shapes Tech`;
 
     footer {
       border-top: 1px solid var(--border);
-      padding: 1.5rem;
+    }
+
+    .footer-sip {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .footer-sip-inner {
+      padding: 0.75rem 1.5rem;
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-sip-claim {
+      font-size: 0.75rem;
+      color: var(--muted-foreground);
+    }
+
+    .footer-sip-divider {
+      font-size: 0.75rem;
+      color: var(--border);
+      user-select: none;
+    }
+
+    .footer-sip-logos {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+    }
+
+    .footer-sip-logo {
+      display: block;
+      object-fit: contain;
+      opacity: 0.75;
+    }
+
+    .footer-sip-logo--zhaw {
+      height: 32px;
+      width: auto;
+    }
+
+    .footer-sip-logo--swissuniversities {
+      height: 24px;
+      width: auto;
     }
 
     .footer-inner {
+      padding: 1.5rem;
       max-width: 1100px;
       margin: 0 auto;
       display: flex;
