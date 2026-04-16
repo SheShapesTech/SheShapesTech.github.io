@@ -10,7 +10,6 @@ const t = useTranslations(lang);
   <section class="hero">
     <img src="/logo.svg" alt="She Shapes Tech" class="hero-logo" />
     <p class="subtitle">{t.home.subtitle}</p>
-    <p class="intro">{t.home.intro}</p>
   </section>
 
   <section class="cards">
@@ -55,16 +54,11 @@ const t = useTranslations(lang);
 
   .subtitle {
     font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--primary);
-    margin-bottom: 1rem;
-  }
-
-  .intro {
-    font-size: 1rem;
+    font-weight: 400;
     color: var(--muted-foreground);
+    line-height: 1.6;
     max-width: 560px;
-    margin: 0 auto;
+    margin: 0 auto 1rem;
   }
 
   .cards {
