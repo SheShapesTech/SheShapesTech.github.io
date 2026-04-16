@@ -13,8 +13,7 @@ Statische Website für das Studierendennetzwerk "She Shapes Tech" (Frauen in der
 ## Projektstruktur
 SheshapesTech.github.io/
 ├── .github/workflows/deploy.yml   # GitHub Actions Deployment
-└── myproject/                     # Astro Projekt
-├── public/                    # Statische Assets (Logo, Bilder)
+├── public/                        # Statische Assets (Logo, Bilder)
 ├── src/
 │   ├── i18n/
 │   │   ├── de.json            # Deutsche Übersetzungen

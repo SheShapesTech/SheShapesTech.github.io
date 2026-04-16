@@ -12,11 +12,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: cd myproject && npm ci
-      - run: cd myproject && npm run build
+      - run: npm ci
+      - run: npm run build
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: myproject/dist
+          path: dist
 
   deploy:
     needs: build
