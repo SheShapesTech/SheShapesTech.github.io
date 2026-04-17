@@ -7,25 +7,25 @@
     "contact": "Kontakt"
   },
   "home": {
-    "description": "She Shapes Tech ist das Netzwerk für Studentinnen an der ZHAW School of Engineering. Vernetzung, Events und gegenseitige Unterstützung — weil gute Kontakte alles verändern.",
-    "subtitle": "She Shapes Tech verbindet Studentinnen an der ZHAW School of Engineering — weil gute Kontakte alles verändern."
+    "description": "She Shapes Tech ist das Netzwerk für Studentinnen an der ZHAW School of Engineering. Vernetzung, Events und gegenseitige Unterstützung, weil gute Kontakte alles verändern.",
+    "subtitle": "She Shapes Tech verbindet Studentinnen an der ZHAW School of Engineering, weil gute Kontakte alles verändern."
   },
   "about": {
-    "description": "Erfahre mehr über die Vision, Mission und Werte von She Shapes Tech — einem Verein von Frauen für Frauen in der Technik an der ZHAW School of Engineering.",
+    "description": "Erfahre mehr über die Vision, Mission und Werte von She Shapes Tech, einem Verein von Frauen für Frauen in der Technik an der ZHAW School of Engineering.",
     "title": "Wer wir sind",
-    "home_desc": "Was She Shapes Tech ausmacht — und warum du dazugehörst.",
+    "home_desc": "Was She Shapes Tech ausmacht und warum du dazugehörst.",
     "vision_title": "Unsere Vision",
-    "vision": "Eine Gemeinschaft, in der Studentinnen an der ZHAW SoE ihren Platz in der Technik selbstbewusst gestalten — offen, vernetzt und auf Augenhöhe.",
+    "vision": "Eine Gemeinschaft, in der Studentinnen an der ZHAW SoE ihren Platz in der Technik selbstbewusst gestalten, offen, vernetzt und auf Augenhöhe.",
     "mission_title": "Unsere Mission",
     "mission": "She Shapes Tech vernetzt Studentinnen an der ZHAW School of Engineering und fördert die Zusammenarbeit von Frauen in technischen und ingenieurwissenschaftlichen Berufen.",
     "values_title": "Unsere Werte",
     "values": [
       { "title": "Gemeinschaft", "desc": "Wir schaffen einen Raum, in dem man sich nicht erklären muss. Einfach dazugehören." },
-      { "title": "Sichtbarkeit", "desc": "Präsenz, Auftreten, Selbstsicherheit — das sind Skills, die man trainieren kann. Wir sind das Übungsfeld." },
+      { "title": "Sichtbarkeit", "desc": "Präsenz, Auftreten, Selbstsicherheit, das sind Skills, die man trainieren kann. Wir sind das Übungsfeld." },
       { "title": "Karriere", "desc": "Kontakte aus dem Studium begleiten eine ganze Laufbahn. Wir bauen dieses Netzwerk früh auf." }
     ],
     "join_title": "Mitmachen",
-    "join_text": "Du möchtest hinter die Kulissen schauen und aktiv mitgestalten? Wir suchen Studentinnen, die Lust haben mitzumachen — ganz nach deinen Interessen: Events mitorganisieren, beim administrativen Teil mithelfen oder einfach dabei sein.",
+    "join_text": "Du möchtest hinter die Kulissen schauen und aktiv mitgestalten? Wir suchen Studentinnen, die Lust haben mitzumachen, ganz nach deinen Interessen: Events mitorganisieren, beim administrativen Teil mithelfen oder einfach dabei sein.",
     "join_benefit": "Was du mitnimmst: echte Erfahrung, ein starkes Netzwerk und den Austausch mit Frauen, die gleich denken wie du.",
     "join_cta": "Melde dich per E-Mail"
   },
@@ -58,7 +58,7 @@
     "funding_claim": "Ein Projekt aus dem «Sustainable Impact Program»"
   },
   "contact": {
-    "description": "Nimm Kontakt mit She Shapes Tech auf — per Teams oder Instagram. Wir freuen uns von dir zu hören.",
+    "description": "Nimm Kontakt mit She Shapes Tech auf - per Teams oder Instagram. Wir freuen uns von dir zu hören.",
     "title": "Kontakt",
     "subtitle": "Wir freuen uns von dir zu hören",
     "connect": "Verbinde dich mit uns",
