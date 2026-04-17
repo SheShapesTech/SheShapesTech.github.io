@@ -4,8 +4,9 @@
 Statische Website für das Studierendennetzwerk "She Shapes Tech" (Frauen in der Technik @ ZHAW School of Engineering).
 
 ## Tech Stack
-- **Framework:** Astro (Static Site Generator)
-- **Hosting:** GitHub Pages via GitHub Actions
+- **Framework:** Astro 6.x (Static Site Generator)
+- **Hosting:** Cloudflare Pages (migriert von GitHub Pages, April 2026)
+- **Domain:** sheshapestech.ch (registriert bei Hostpoint, DNS bei Cloudflare)
 - **Sprachen:** DE/EN (i18n via Astro routing)
 - **Schrift:** Nunito (Google Fonts)
 - **Keine** Datenbank, kein Backend, kein CMS
@@ -56,11 +57,32 @@ SheshapesTech.github.io/
 - Komponenten in `src/components/` wenn etwas auf mehr als einer Seite verwendet wird
 - Bilder und Assets immer in `public/`
 
+## Lokales Setup
+
+```bash
+# Voraussetzung: Node.js >= 22.12.0
+npm install
+npm run dev      # Entwicklungsserver auf http://localhost:4321
+npm run build    # Produktions-Build (Ausgabe in dist/)
+npm run preview  # Build lokal vorschauen
+```
+
 ## Deployment
-- Branch `main` → automatisches Deployment via GitHub Actions
-- Lokal testen: `cd myproject && npm run dev`
-- Build testen: `cd myproject && npm run build`
-- Node.js Version: 22
+- Branch `main` → automatisches Deployment via **Cloudflare Pages**
+- Cloudflare baut automatisch mit `npm run build`, Ausgabeverzeichnis: `dist`
+- Kein manueller Schritt nötig -- Push auf `main` genügt
+- Cloudflare-Account: sheshapestech.engineering@zhaw.ch (Vereins-Account)
+- Passwörter/Zugangsdaten: im geteilten Bitwarden-Tresor des Vorstands
+
+## Accounts & Zugang (Übersicht)
+| Dienst | Account | Zweck |
+|---|---|---|
+| Cloudflare | sheshapestech.engineering@zhaw.ch | Hosting, DNS, Domain |
+| Hostpoint | (siehe Bitwarden) | Domain-Registrar sheshapestech.ch |
+| GitHub | github.com/SheShapesTech | Quellcode-Repository |
+| ZHAW-Postfach | sheshapestech.engineering@zhaw.ch | Öffentliche Kontaktadresse |
+
+> Credentials nie im Repo ablegen. Zugangsdaten im geteilten Bitwarden-Tresor.
 
 ## Rechtliches
 - She Shapes Tech ist ein **eigenständiger Verein** — handelt nicht im Namen der ZHAW (Rechtsdienst-Auflage)
@@ -75,4 +97,20 @@ SheshapesTech.github.io/
 - Meet & Eat wurde bewusst weggelassen (zu temporär für eigene Seite)
 - Team-Seite existiert noch nicht — keine persönlichen Daten online vor Absprache
 - Zweisprachigkeit ist Pflicht, nicht optional
-- Hosting soll später auf ZHAW migriert werden können (Alternativen: Cloudflare Pages)
+- Hosting auf Cloudflare Pages (April 2026) — kann später zu ZHAW migriert werden
+
+## Inhalte bearbeiten
+
+Alle Texte der Website leben in zwei Dateien:
+- `src/i18n/de.json` — deutscher Text
+- `src/i18n/en.json` — englischer Text
+
+**Neue Seite hinzufügen:**
+1. Seite in `src/pages/meinethema.astro` erstellen (DE)
+2. Seite in `src/pages/en/meinethema.astro` erstellen (EN)
+3. Texte in `de.json` und `en.json` unter einem neuen Schlüssel ergänzen
+4. Navigation in `de.json` / `en.json` anpassen (Schlüssel `nav`)
+
+**Bilder hinzufügen:** immer in `public/` ablegen, dann per `/bildname.jpg` referenzieren.
+
+**Niemals** Text direkt in `.astro`-Dateien schreiben -- immer über die JSON-Dateien.
