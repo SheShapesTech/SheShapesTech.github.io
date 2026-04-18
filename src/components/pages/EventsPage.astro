@@ -1,0 +1,231 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { getLangFromUrl, useTranslations } from '@/i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<BaseLayout title={t.events.title} description={t.events.description}>
+  <div class="page">
+    <div class="page-header">
+      <h1>{t.events.title}</h1>
+      <p class="subtitle">{t.events.subtitle}</p>
+    </div>
+
+    <div class="events-list">
+      <div class="event-card">
+        <div class="event-date-badge">
+          <span class="day">7</span>
+          <span class="month">{t.events.may7_month}</span>
+        </div>
+        <div class="event-info">
+          <p class="event-collab">{t.events.may7_subtitle}</p>
+          <h3>{t.events.may7_title}</h3>
+          <p class="event-desc">{t.events.may7_desc}</p>
+          <ul class="event-meta">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              {t.events.may7_date}
+            </li>
+            <li>
+              <a href="https://www.google.com/maps/search/?api=1&query=Theaterstrasse+17%2C+8400+Winterthur" target="_blank" rel="noopener noreferrer" class="meta-map-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                {t.events.may7_location}
+              </a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              {t.events.may7_details}
+            </li>
+          </ul>
+          <div class="event-actions">
+            <a href="https://forms.cloud.microsoft/e/xnr9WkSWst?origin=lprLink" target="_blank" rel="noopener noreferrer" class="btn-primary">
+              {t.events.register} →
+            </a>
+            <a href="/ask-engineers-may7.ics" download class="btn-secondary">
+              {t.events.save_date}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+  }
+
+  .page-header {
+    margin-bottom: 3rem;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--foreground);
+    margin-bottom: 0.5rem;
+  }
+
+  .subtitle {
+    color: var(--primary);
+    font-weight: 500;
+    font-size: 1.05rem;
+  }
+
+  .events-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .event-card {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background: var(--muted);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    transition: all 0.2s;
+  }
+
+  .event-card:hover {
+    border-color: var(--primary);
+    box-shadow: 0 4px 20px rgba(108, 134, 204, 0.15);
+  }
+
+  .event-date-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--primary);
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    min-width: 56px;
+    text-align: center;
+    flex-shrink: 0;
+  }
+
+  .day {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .month {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 0.2rem;
+  }
+
+  .event-info {
+    flex: 1;
+  }
+
+  .event-collab {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.25rem;
+  }
+
+  .event-info h3 {
+    font-weight: 700;
+    font-size: 1.15rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .event-desc {
+    font-size: 0.9rem;
+    color: var(--muted-foreground);
+    margin-bottom: 1rem;
+  }
+
+  .event-meta {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .event-meta li,
+  .event-meta a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--muted-foreground);
+  }
+
+  .event-meta svg {
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+    color: var(--primary);
+  }
+
+  .meta-map-link {
+    text-decoration: underline;
+    text-decoration-color: var(--border);
+    transition: color 0.2s;
+  }
+
+  .meta-map-link:hover {
+    color: var(--primary);
+    text-decoration-color: var(--primary);
+  }
+
+  .event-actions {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .btn-primary {
+    font-size: 0.875rem;
+    font-weight: 700;
+    background: var(--primary);
+    color: white;
+    padding: 0.5rem 1.25rem;
+    border-radius: 9999px;
+    transition: background 0.2s;
+    white-space: nowrap;
+  }
+
+  .btn-primary:hover {
+    background: var(--primary-dark);
+  }
+
+  .btn-secondary {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    padding: 0.5rem 1.25rem;
+    border-radius: 9999px;
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+
+  .btn-secondary:hover {
+    background: var(--primary);
+    color: white;
+  }
+
+  @media (max-width: 600px) {
+    .event-card {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+</style>
