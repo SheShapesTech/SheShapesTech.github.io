@@ -8,7 +8,7 @@ Statische Website für das Studierendennetzwerk "She Shapes Tech" (Frauen in der
 - **Hosting:** Cloudflare Pages (migriert von GitHub Pages, April 2026)
 - **Domain:** sheshapestech.ch (registriert bei Hostpoint, DNS bei Cloudflare)
 - **Sprachen:** DE/EN (i18n via Astro routing)
-- **Schrift:** Nunito (Google Fonts)
+- **Schrift:** Barlow (Google Fonts)
 - **Keine** Datenbank, kein Backend, kein CMS
 
 ## Projektstruktur
@@ -38,7 +38,7 @@ SheshapesTech.github.io/
 - **Primärfarbe:** `#6c86cc` (Blau/Indigo aus dem Logo)
 - **Textfarbe:** `#28292a` (fast Schwarz)
 - **Hintergrund:** `#ffffff`
-- **Schrift:** Nunito (400, 500, 600, 700, 800)
+- **Schrift:** Barlow (400, 500, 600, 700, 800)
 - **Alle CSS-Variablen** leben in `BaseLayout.astro` unter `:root`
 - Designänderungen immer über CSS-Variablen, nie hardcoded
 
