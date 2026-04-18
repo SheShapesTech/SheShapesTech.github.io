@@ -1,0 +1,109 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { getLangFromUrl, useTranslations } from '@/i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<BaseLayout title={t.impressum.title} description={t.impressum.description}>
+  <div class="page">
+    <div class="page-header">
+      <h1>{t.impressum.title}</h1>
+    </div>
+
+    <div class="sections">
+      <section>
+        <h2>{t.impressum.org_title}</h2>
+        <p>{t.impressum.org_name}</p>
+      </section>
+
+      <section>
+        <h2>{t.impressum.address_title}</h2>
+        <address>
+          {t.impressum.address_line1}<br />
+          {t.impressum.address_line2}<br />
+          {t.impressum.address_line3}
+        </address>
+      </section>
+
+      <section>
+        <h2>{t.impressum.contact_title}</h2>
+        <p>
+          <a href="mailto:sheshapestech.engineering@zhaw.ch">sheshapestech.engineering@zhaw.ch</a>
+        </p>
+      </section>
+
+      <section>
+        <h2>{t.impressum.legal_title}</h2>
+        <p class="disclaimer">{t.impressum.disclaimer}</p>
+        <p>{t.impressum.jurisdiction}</p>
+      </section>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .page {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+  }
+
+  .page-header {
+    margin-bottom: 3rem;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--foreground);
+  }
+
+  .sections {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  section {
+    border-left: 3px solid var(--primary);
+    padding-left: 1.25rem;
+  }
+
+  h2 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+  }
+
+  p, address {
+    font-size: 0.95rem;
+    color: var(--foreground);
+    line-height: 1.7;
+    font-style: normal;
+  }
+
+  a {
+    color: var(--primary);
+    text-decoration: underline;
+    text-decoration-color: var(--border);
+  }
+
+  a:hover {
+    text-decoration-color: var(--primary);
+  }
+
+  .disclaimer {
+    background: var(--muted);
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--muted-foreground);
+  }
+</style>

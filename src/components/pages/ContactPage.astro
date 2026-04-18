@@ -1,0 +1,141 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { getLangFromUrl, useTranslations } from '@/i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<BaseLayout title={t.contact.title} description={t.contact.description}>
+  <div class="page">
+    <div class="page-header">
+      <h1>{t.contact.title}</h1>
+      <p class="subtitle">{t.contact.subtitle}</p>
+    </div>
+
+    <div class="contact-card">
+      <h2>{t.contact.connect}</h2>
+
+      <div class="links">
+        <a href="https://teams.microsoft.com/l/channel/19%3AXi784Ms6NohX6oO0abKqMh0Py_Kr3x9U7NtXGiziwyM1%40thread.tacv2/General?groupId=c9022015-7217-4b42-a31d-dd1ae8f6bc8e&tenantId=5d1a9f9d-201f-4a10-b983-451cf65cbc1e" target="_blank" rel="noopener noreferrer" class="link-item">
+          <div class="link-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div>
+            <p class="link-title">MS Teams</p>
+            <p class="link-desc">{t.contact.teams_desc}</p>
+          </div>
+        </a>
+
+        <a href="mailto:sheshapestech.engineering@zhaw.ch" class="link-item">
+          <div class="link-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div>
+            <p class="link-title">Email</p>
+            <p class="link-desc">sheshapestech.engineering@zhaw.ch</p>
+          </div>
+        </a>
+
+        <a href="https://www.instagram.com/sheshapestech/" target="_blank" rel="noopener noreferrer" class="link-item">
+          <div class="link-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </div>
+          <div>
+            <p class="link-title">Instagram</p>
+            <p class="link-desc">{t.contact.instagram_desc}</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .page {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+  }
+
+  .page-header {
+    margin-bottom: 3rem;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--foreground);
+    margin-bottom: 0.5rem;
+  }
+
+  .subtitle {
+    color: var(--primary);
+    font-weight: 500;
+    font-size: 1.05rem;
+  }
+
+  .contact-card {
+    background: var(--muted);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 2rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .link-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    transition: all 0.2s;
+  }
+
+  a.link-item:hover {
+    border-color: var(--primary);
+    box-shadow: 0 2px 12px rgba(108, 134, 204, 0.15);
+  }
+
+  .link-icon {
+    width: 40px;
+    height: 40px;
+    background: var(--primary);
+    color: white;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .link-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .link-title {
+    font-weight: 700;
+    font-size: 0.95rem;
+  }
+
+  .link-desc {
+    font-size: 0.85rem;
+    color: var(--muted-foreground);
+    overflow-wrap: break-word;
+    word-break: break-all;
+  }
+</style>
