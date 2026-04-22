@@ -49,6 +49,42 @@ const t = useTranslations(lang);
           </div>
         </div>
       </div>
+
+      <div class="event-card">
+        <div class="event-date-badge">
+          <span class="day">11</span>
+          <span class="month">{t.events.may11_month}</span>
+        </div>
+        <div class="event-info">
+          <p class="event-collab">{t.events.may11_subtitle}</p>
+          <h3>{t.events.may11_title}</h3>
+          <p class="event-desc">{t.events.may11_desc}</p>
+          <ul class="event-meta">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              {t.events.may11_date}
+            </li>
+            <li>
+              <a href="https://www.google.com/maps/search/?api=1&query=Technikumstrasse+7%2C+8400+Winterthur" target="_blank" rel="noopener noreferrer" class="meta-map-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                {t.events.may11_location}
+              </a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              {t.events.may11_details}
+            </li>
+          </ul>
+          <div class="event-actions">
+            <a href="https://forms.cloud.microsoft/e/kY4YCbjB50?origin=lprLink" target="_blank" rel="noopener noreferrer" class="btn-primary">
+              {t.events.register} →
+            </a>
+            <a href="/formula-student-may11.ics" download class="btn-secondary">
+              {t.events.save_date}
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </BaseLayout>

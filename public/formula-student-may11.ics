@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//She Shapes Tech//Events//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+DTSTART:20260511T160000Z
+DTEND:20260511T180000Z
+SUMMARY:She Shapes Formula Student – Werkstattführung\, Lamination Workshop und Apéro
+DESCRIPTION:She Shapes Tech × Zurich UAS Racing\n\nTauch in die spannende Welt der Formula Student ein und lerne das Team kennen. Beim gemeinsamen Workshop kannst du Carbonteile für den nächsten Rennboliden herstellen. Im Anschluss gibt es einen Apéro und die Möglichkeit\, sich auszutauschen.\n\nNur 12 Plätze – first come\, first serve\n\nAnmelden: https://forms.cloud.microsoft/e/kY4YCbjB50?origin=lprLink
+LOCATION:Gebäude TE\, Technikumstrasse 7\, 8400 Winterthur
+URL:https://forms.cloud.microsoft/e/kY4YCbjB50?origin=lprLink
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR
