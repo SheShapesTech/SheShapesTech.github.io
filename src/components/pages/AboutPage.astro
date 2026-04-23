@@ -9,6 +9,10 @@ const t = useTranslations(lang);
 <BaseLayout title={t.about.title} description={t.about.description}>
   <div class="page">
 
+    <div class="page-header">
+      <h1>{t.about.title}</h1>
+    </div>
+
     <section class="vision">
       <p class="vision-label">{t.about.vision_title}</p>
       <blockquote>{t.about.vision}</blockquote>
@@ -51,6 +55,12 @@ const t = useTranslations(lang);
     display: flex;
     flex-direction: column;
     gap: 4rem;
+  }
+
+  .page-header h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--foreground);
   }
 
   /* Vision */
