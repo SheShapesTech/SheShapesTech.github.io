@@ -85,12 +85,13 @@
     "funding_claim": "A project from the «Sustainable Impact Program»"
   },
   "contact": {
-    "description": "Get in touch with She Shapes Tech — via Teams or Instagram. We'd love to hear from you.",
+    "description": "Get in touch with She Shapes Tech — via Teams, Instagram or LinkedIn. We'd love to hear from you.",
     "title": "Contact",
     "subtitle": "We'd love to hear from you",
     "connect": "Connect With Us",
     "teams_desc": "Join our Teams channel",
-"instagram_desc": "Follow us on Instagram"
+    "instagram_desc": "Follow us on Instagram",
+    "linkedin_desc": "Follow us on LinkedIn"
   },
   "footer": {
     "rights": "© 2026 She Shapes Tech.",
@@ -126,7 +127,7 @@
     "fonts_title": "Google Fonts",
     "fonts": "This website uses Google Fonts. The fonts are loaded from servers operated by Google LLC (USA). Your IP address is transmitted to Google in this process. Legal basis: legitimate interest in the consistent display of the website (Art. 31 DSG). We plan to host Google Fonts locally in the future.",
     "external_title": "External Links and Services",
-    "external": "The website contains links to external services (Instagram, Microsoft Teams, Google Maps, Microsoft Forms). When you follow these links, you leave our website. She Shapes Tech has no control over their data practices. The privacy policies of the respective providers apply.",
+    "external": "The website contains links to external services (Instagram, LinkedIn, Microsoft Teams, Google Maps, Microsoft Forms). When you follow these links, you leave our website. She Shapes Tech has no control over their data practices. The privacy policies of the respective providers apply.",
     "email_title": "Contact by Email",
     "email": "When you contact us by email, your message is stored in an email inbox provided by ZHAW School of Engineering for She Shapes Tech. Your data is used exclusively to process your inquiry.",
     "rights_title": "Your Rights (DSG)",
