@@ -8,7 +8,7 @@ Statische Website für das Studierendennetzwerk "She Shapes Tech" (Frauen in der
 - **Hosting:** Cloudflare Pages (migriert von GitHub Pages, April 2026)
 - **Domain:** sheshapestech.ch (registriert bei Hostpoint, DNS bei Cloudflare)
 - **Sprachen:** DE/EN (i18n via Astro routing)
-- **Schrift:** Barlow (Google Fonts)
+- **Schrift:** Barlow (selbst gehostet via `@fontsource/barlow`)
 - **Keine** Datenbank, kein Backend, kein CMS
 
 ## Projektstruktur
@@ -90,7 +90,7 @@ npm run preview  # Build lokal vorschauen
 - Kontakt: sheshapestech.engineering@zhaw.ch (ZHAW-Postfach, verwaltet durch Diversity Beauftragte SoE)
 - Impressum: `/impressum` — bei Adressänderung in `de.json` + `en.json` anpassen
 - Datenschutz: `/datenschutz` — bei Änderungen am Tech-Stack (z.B. Analytics, neue externe Dienste) aktualisieren
-- Google Fonts werden aktuell von Google-Servern geladen (IP-Übermittlung, dokumentiert in Datenschutz) — geplantes Self-Hosting: Issue #18
+- Schriftart Barlow wird selbst gehostet via `@fontsource/barlow` (Issue #18 umgesetzt)
 
 ## Wichtige Entscheidungen (Kontext)
 - Kein CMS für den Start — Inhalte direkt in JSON-Dateien
