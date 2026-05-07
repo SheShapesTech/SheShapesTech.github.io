@@ -50,6 +50,14 @@ const t = useTranslations(lang);
       </div>
     </div>
 
+    <div class="sponsor-cta">
+      <div class="sponsor-cta-text">
+        <strong>{t.sponsors.cta_title}</strong>
+        <span>{t.sponsors.cta_text}</span>
+      </div>
+      <a href="mailto:sheshapestech.engineering@zhaw.ch" class="cta-btn">{t.sponsors.cta_btn}</a>
+    </div>
+
   </div>
 </BaseLayout>
 
@@ -205,6 +213,51 @@ const t = useTranslations(lang);
     font-size: 0.8rem;
     color: var(--primary);
     font-weight: 600;
+  }
+
+  .sponsor-cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    background: var(--muted);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem 2rem;
+    flex-wrap: wrap;
+  }
+
+  .sponsor-cta-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .sponsor-cta-text strong {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--foreground);
+  }
+
+  .sponsor-cta-text span {
+    font-size: 0.9rem;
+    color: var(--muted-foreground);
+  }
+
+  .cta-btn {
+    display: inline-block;
+    background: var(--primary);
+    color: white;
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0.65rem 1.5rem;
+    border-radius: 9999px;
+    white-space: nowrap;
+    transition: background 0.2s;
+  }
+
+  .cta-btn:hover {
+    background: var(--primary-dark);
   }
 
 </style>

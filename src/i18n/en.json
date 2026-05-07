@@ -83,7 +83,10 @@
     "sponsors_title": "Sponsors",
     "sponsors_intro": "Companies that support She Shapes Tech financially and promote women in tech.",
     "placeholder_name": "Your Company",
-    "placeholder_cta": "Become a sponsor →"
+    "placeholder_cta": "Become a sponsor →",
+    "cta_title": "Want to support She Shapes Tech?",
+    "cta_text": "Support our network as a sponsor.",
+    "cta_btn": "Get in touch →"
   },
   "contact": {
     "description": "Get in touch with She Shapes Tech — via Teams, Instagram or LinkedIn. We'd love to hear from you.",
