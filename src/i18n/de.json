@@ -3,7 +3,7 @@
     "home": "Startseite",
     "events": "Events",
     "about": "Wer wir sind",
-    "sponsors": "Partner",
+    "sponsors": "Partner & Sponsoren",
     "contact": "Kontakt"
   },
   "home": {
@@ -73,16 +73,17 @@
     ]
   },
   "sponsors": {
-    "description": "Unsere Partnerinnen und Partner ermöglichen She Shapes Tech. Gemeinsam stärken wir Frauen in technischen Berufen an der ZHAW School of Engineering.",
-    "title": "Partner",
-    "subtitle": "Unsere Partner und Unterstützerinnen",
-    "intro": "Wir danken unseren Partnerinnen und Partnern, die She Shapes Tech ermöglichen.",
-    "become_title": "Partner werden?",
-    "become_cta": "Kontakt aufnehmen",
-    "zhaw_desc": "ZHAW School of Engineering — Heimat und Unterstützerin von She Shapes Tech.",
-    "svin_desc": "Schweizerische Vereinigung der Ingenieurinnen — vernetzt Frauen in technischen Berufen.",
-    "funding_title": "Förderung",
-    "funding_claim": "Ein Projekt aus dem «Sustainable Impact Program»"
+    "description": "She Shapes Tech entsteht mit der Unterstützung von Partnerinnen und Sponsoren, die Frauen in der Technik an der ZHAW School of Engineering fördern.",
+    "title": "Partner & Sponsoren",
+    "subtitle": "Die, die She Shapes Tech möglich machen.",
+    "intro": "She Shapes Tech entsteht dank Menschen und Organisationen, die unsere Mission teilen und uns aktiv unterstützen.",
+    "partners_title": "Hauptpartner",
+    "zhaw_desc": "Wir sind Teil der ZHAW School of Engineering — und wir gestalten sie mit. Als eigenständiger Verein sind wir in der School of Engineering verwurzelt und von ihr getragen.",
+    "svin_desc": "SVIN sind unsere Coaches und Unterstützerinnen — beim Aufbau des Vereins, bei der Organisation von Events und in der Pflege unserer Community.",
+    "sponsors_title": "Sponsoren",
+    "sponsors_intro": "Unternehmen, die She Shapes Tech finanziell unterstützen und Frauen in der Technik fördern.",
+    "placeholder_name": "Ihr Unternehmen",
+    "placeholder_cta": "Jetzt Sponsor werden →"
   },
   "contact": {
     "description": "Nimm Kontakt mit She Shapes Tech auf - per Teams, Instagram oder LinkedIn. Wir freuen uns von dir zu hören.",

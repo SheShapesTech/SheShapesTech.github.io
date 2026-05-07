@@ -3,7 +3,7 @@
     "home": "Home",
     "events": "Events",
     "about": "Who we are",
-    "sponsors": "Partners",
+    "sponsors": "Partners & Sponsors",
     "contact": "Contact"
   },
   "home": {
@@ -73,16 +73,17 @@
     ]
   },
   "sponsors": {
-    "description": "Our partners make She Shapes Tech possible. Together we empower women in technical professions at ZHAW School of Engineering.",
-    "title": "Partners",
-    "subtitle": "Our partners and supporters",
-    "intro": "We thank our partners who make She Shapes Tech possible.",
-    "become_title": "Become a partner?",
-    "become_cta": "Get in touch",
-    "zhaw_desc": "ZHAW School of Engineering — home and supporter of She Shapes Tech.",
-    "svin_desc": "Swiss Association of Women Engineers — connecting women in technical professions.",
-    "funding_title": "Funding",
-    "funding_claim": "A project from the «Sustainable Impact Program»"
+    "description": "She Shapes Tech is made possible with the support of partners and sponsors who empower women in tech at ZHAW School of Engineering.",
+    "title": "Partners & Sponsors",
+    "subtitle": "Those who make She Shapes Tech possible.",
+    "intro": "She Shapes Tech exists thanks to people and organisations who share our mission and actively support us.",
+    "partners_title": "Main Partners",
+    "zhaw_desc": "We are part of ZHAW School of Engineering — and we shape it together. As an independent association, we are rooted in and supported by the School of Engineering.",
+    "svin_desc": "SVIN are our coaches and supporters — in building the association, organising events, and growing our community.",
+    "sponsors_title": "Sponsors",
+    "sponsors_intro": "Companies that support She Shapes Tech financially and promote women in tech.",
+    "placeholder_name": "Your Company",
+    "placeholder_cta": "Become a sponsor →"
   },
   "contact": {
     "description": "Get in touch with She Shapes Tech — via Teams, Instagram or LinkedIn. We'd love to hear from you.",
