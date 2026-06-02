@@ -13,6 +13,6 @@
   },
   "dependencies": {
     "@fontsource/barlow": "^5.2.8",
-    "astro": "^6.1.4"
+    "astro": "^6.4.2"
   }
 }
