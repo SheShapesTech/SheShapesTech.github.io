@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
+Disallow: /statuten.pdf
 Sitemap: https://sheshapestech.ch/sitemap-index.xml
