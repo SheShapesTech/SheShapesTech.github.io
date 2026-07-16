@@ -41,6 +41,21 @@
     "past_title": "Vergangene Veranstaltungen",
     "list": [
       {
+        "id": "sisters-in-stem-oct17",
+        "date": "2026-10-17",
+        "day": "17",
+        "month": "Okt",
+        "subtitle": "Save the Date",
+        "title": "Sisters in STEM",
+        "desc": "Vernetze dich mit female* STEM-Studentinnen aus anderen Fachrichtungen und von anderen Hochschulen. Erhalte informative und inspirierende Einblicke in Themen wie Gender in STEM und die Dos and Don'ts des Netzwerkens. Erfahre mehr über Geschichte, Ziele und Initiativen, Herausforderungen und Erfolge der Studentinnenvereine im STEM-Bereich.",
+        "date_display": "Samstag, 17. Oktober 2026",
+        "location": "Zürich",
+        "organizer": "Organisiert von der SVIN, gemeinsam mit She Shapes Tech, LIMES, CSNOW, Winz, FEMgineers, phi:male und HSLU Women in IT",
+        "details": "Details folgen – Save the Date!",
+        "flyer_url": "/sisters-in-stem-flyer-savedate.pdf",
+        "flyer_label": "Flyer (PDF)"
+      },
+      {
         "id": "ask-engineers-may7",
         "date": "2026-05-07",
         "day": "7",

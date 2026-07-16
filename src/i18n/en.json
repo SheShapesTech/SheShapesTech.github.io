@@ -41,6 +41,21 @@
     "past_title": "Past Events",
     "list": [
       {
+        "id": "sisters-in-stem-oct17",
+        "date": "2026-10-17",
+        "day": "17",
+        "month": "Oct",
+        "subtitle": "Save the Date",
+        "title": "Sisters in STEM",
+        "desc": "Join us for an event where you can connect with female* STEM students from other disciplines and other campuses. Get informed and inspiring insights into topics such as gender in STEM fields and the dos and don'ts of networking. Learn about the history, goals and initiatives, struggles and successes of female STEM student associations.",
+        "date_display": "Saturday, 17 October 2026",
+        "location": "Zurich",
+        "organizer": "Organised by SVIN, together with She Shapes Tech, LIMES, CSNOW, Winz, FEMgineers, phi:male and HSLU Women in IT",
+        "details": "Details to follow – save the date!",
+        "flyer_url": "/sisters-in-stem-flyer-savedate.pdf",
+        "flyer_label": "Flyer (PDF)"
+      },
+      {
         "id": "ask-engineers-may7",
         "date": "2026-05-07",
         "day": "7",

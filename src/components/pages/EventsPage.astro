@@ -17,11 +17,14 @@ type EventItem = {
   title: string;
   desc: string;
   date_display: string;
-  map_url: string;
+  map_url?: string;
   location: string;
   details: string;
-  register_url: string;
-  ics_url: string;
+  register_url?: string;
+  ics_url?: string;
+  flyer_url?: string;
+  flyer_label?: string;
+  organizer?: string;
 };
 
 const allEvents = (t.events.list as EventItem[]).sort(
@@ -56,24 +59,48 @@ const past = allEvents.filter(e => new Date(e.date) < today);
                   {event.date_display}
                 </li>
                 <li>
-                  <a href={event.map_url} target="_blank" rel="noopener noreferrer" class="meta-map-link">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                    {event.location}
-                  </a>
+                  {event.map_url ? (
+                    <a href={event.map_url} target="_blank" rel="noopener noreferrer" class="meta-map-link">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                      {event.location}
+                    </a>
+                  ) : (
+                    <>
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                      {event.location}
+                    </>
+                  )}
                 </li>
+                {event.organizer && (
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    {event.organizer}
+                  </li>
+                )}
                 <li>
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
                   {event.details}
+                  {event.flyer_url && (
+                    <>
+                      {' '}· <a href={event.flyer_url} target="_blank" rel="noopener noreferrer" class="meta-map-link">{event.flyer_label}</a>
+                    </>
+                  )}
                 </li>
               </ul>
-              <div class="event-actions">
-                <a href={event.register_url} target="_blank" rel="noopener noreferrer" class="btn-primary">
-                  {t.events.register} →
-                </a>
-                <a href={event.ics_url} download class="btn-secondary">
-                  {t.events.save_date}
-                </a>
-              </div>
+              {(event.register_url || event.ics_url) && (
+                <div class="event-actions">
+                  {event.register_url && (
+                    <a href={event.register_url} target="_blank" rel="noopener noreferrer" class="btn-primary">
+                      {t.events.register} →
+                    </a>
+                  )}
+                  {event.ics_url && (
+                    <a href={event.ics_url} download class="btn-secondary">
+                      {t.events.save_date}
+                    </a>
+                  )}
+                </div>
+              )}
             </div>
           </div>
         ))
@@ -107,6 +134,12 @@ const past = allEvents.filter(e => new Date(e.date) < today);
                       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
                       {event.location}
                     </li>
+                    {event.organizer && (
+                      <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        {event.organizer}
+                      </li>
+                    )}
                     <li>
                       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
                       {event.details}
