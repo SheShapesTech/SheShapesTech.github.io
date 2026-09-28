@@ -41,6 +41,22 @@
     "past_title": "Vergangene Veranstaltungen",
     "list": [
       {
+        "id": "welcome-apero-oct1",
+        "date": "2026-10-01",
+        "day": "1",
+        "month": "Okt",
+        "subtitle": "She Shapes Tech",
+        "title": "Welcome Apéro",
+        "desc": "Food, Drinks, Games & gute Gespräche mit Studentinnen aus verschiedenen Studiengängen. Neue Leute kennenlernen – ohne awkward Smalltalk. Alleine kommen, mit neuen Kontakten gehen.",
+        "date_display": "Donnerstag, 1. Oktober 2026, 18:00–21:00 Uhr",
+        "map_url": "https://maps.app.goo.gl/V3FUqk1RhuwCuKoL9",
+        "location": "ZHAW Mensa Eulachpassage, Gebäude TN, 2. Stockwerk",
+        "details": "Gratis Snacks & Drinks · Friend-Speed-Dating & weitere coole Spiele",
+        "register_url": "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=nZ8aXR8gEEq5g0Uc9ly8HpZQDVRL3kRPuzVVY6x5g_ZURTEwRFFSUUw1TzVZOUY2UDVXSTE3R1JBQi4u",
+        "flyer_url": "/willkommensapero2026-flyer.png",
+        "flyer_label": "Flyer ansehen"
+      },
+      {
         "id": "sisters-in-stem-oct17",
         "date": "2026-10-17",
         "day": "17",
