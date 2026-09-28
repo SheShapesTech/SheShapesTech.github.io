@@ -63,13 +63,15 @@
         "month": "Oct",
         "subtitle": "Save the Date",
         "title": "Sisters in STEM",
-        "desc": "Join us for an event where you can connect with female* STEM students from other disciplines and other campuses. Get informed and inspiring insights into topics such as gender in STEM fields and the dos and don'ts of networking. Learn about the history, goals and initiatives, struggles and successes of female STEM student associations.",
-        "date_display": "Saturday, 17 October 2026",
-        "location": "Zurich",
+        "desc": "What happens when women* in STEM from different universities come together? An afternoon of talks, networking, new perspectives and, of course, an apéro — together with women's groups from ETH, UZH, ZHAW and beyond. Exchange experiences, find your people beyond your own campus and make a few new connections. Different universities. Different fields. One community.",
+        "date_display": "Saturday, 17 October 2026, 13:00–17:00",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=Toni-Areal%2C+Pfingstweidstrasse+96%2C+8005+Z%C3%BCrich",
+        "location": "Toni-Areal, Pfingstweidstrasse 96, 8005 Zurich",
         "organizer": "Organised by SVIN, together with She Shapes Tech, LIMES, CSNOW, Winz, FEMgineers, phi:male and HSLU Women in IT",
-        "details": "Details to follow – save the date!",
-        "flyer_url": "/sisters-in-stem-flyer-savedate.pdf",
-        "flyer_label": "Flyer (PDF)"
+        "details": "Talks, networking and apéro",
+        "register_url": "https://forms.cloud.microsoft/pages/responsepage.aspx?id=6o1D_CFmjkO6ZGiKzoHl3IsMBTX-e19NpBeX-3MmY95URFpRSEgxWTJTRTI3OVpBVFFTWVo0VFhIMC4u&route=shorturl",
+        "flyer_url": "/sisters-in-stem-26-flyer.png",
+        "flyer_label": "View flyer"
       },
       {
         "id": "ask-engineers-may7",

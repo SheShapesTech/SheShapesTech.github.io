@@ -63,13 +63,15 @@
         "month": "Okt",
         "subtitle": "Save the Date",
         "title": "Sisters in STEM",
-        "desc": "Vernetze dich mit female* STEM-Studentinnen aus anderen Fachrichtungen und von anderen Hochschulen. Erhalte informative und inspirierende Einblicke in Themen wie Gender in STEM und die Dos and Don'ts des Netzwerkens. Erfahre mehr über Geschichte, Ziele und Initiativen, Herausforderungen und Erfolge der Studentinnenvereine im STEM-Bereich.",
-        "date_display": "Samstag, 17. Oktober 2026",
-        "location": "Zürich",
+        "desc": "Was passiert, wenn Frauen* in STEM von verschiedenen Hochschulen zusammenkommen? Ein Nachmittag mit Talks, Networking, neuen Perspektiven und Apéro — gemeinsam mit Frauengruppen von ETH, UZH, ZHAW und weiteren. Tausch dich aus, finde deine Leute über den eigenen Campus hinaus und knüpfe neue Kontakte. Verschiedene Hochschulen. Verschiedene Fachrichtungen. Eine Community.",
+        "date_display": "Samstag, 17. Oktober 2026, 13:00–17:00 Uhr",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=Toni-Areal%2C+Pfingstweidstrasse+96%2C+8005+Z%C3%BCrich",
+        "location": "Toni-Areal, Pfingstweidstrasse 96, 8005 Zürich",
         "organizer": "Organisiert von der SVIN, gemeinsam mit She Shapes Tech, LIMES, CSNOW, Winz, FEMgineers, phi:male und HSLU Women in IT",
-        "details": "Details folgen – Save the Date!",
-        "flyer_url": "/sisters-in-stem-flyer-savedate.pdf",
-        "flyer_label": "Flyer (PDF)"
+        "details": "Talks, Networking und Apéro",
+        "register_url": "https://forms.cloud.microsoft/pages/responsepage.aspx?id=6o1D_CFmjkO6ZGiKzoHl3IsMBTX-e19NpBeX-3MmY95URFpRSEgxWTJTRTI3OVpBVFFTWVo0VFhIMC4u&route=shorturl",
+        "flyer_url": "/sisters-in-stem-26-flyer.png",
+        "flyer_label": "Flyer ansehen"
       },
       {
         "id": "ask-engineers-may7",
