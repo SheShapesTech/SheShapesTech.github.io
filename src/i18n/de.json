@@ -41,6 +41,19 @@
     "past_title": "Vergangene Veranstaltungen",
     "list": [
       {
+        "id": "game-night-nov12",
+        "date": "2026-11-12",
+        "day": "12",
+        "month": "Nov",
+        "subtitle": "She Shapes Tech",
+        "title": "GameNight",
+        "desc": "Ein gemütlicher Abend mit Brettspielen und guten Gesprächen unter Studentinnen. Egal ob Strategie-Profi oder Gelegenheitsspielerin – Hauptsache, du hast Lust auf eine gute Runde. Alleine kommen, mit neuen Mitspielerinnen gehen.",
+        "date_display": "Donnerstag, 12. November 2026, ab 19:00 Uhr",
+        "map_url": "https://www.google.com/maps/search/?api=1&query=Technikumstrasse+9%2C+8400+Winterthur",
+        "location": "Raum TE602, Gebäude TE, Technikumstrasse 9, Winterthur",
+        "details": "Brettspiele & gemütliche Runde · Weitere Infos folgen"
+      },
+      {
         "id": "welcome-apero-oct1",
         "date": "2026-10-01",
         "day": "1",
