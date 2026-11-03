@@ -41,6 +41,19 @@
     "past_title": "Vergangene Veranstaltungen",
     "list": [
       {
+        "id": "stadler-rail-dec1",
+        "date": "2026-12-01",
+        "day": "1",
+        "month": "Dez",
+        "subtitle": "She Shapes Tech x Stadler Rail",
+        "title": "Next Stop: Stadler Rail",
+        "desc": "Du hast eine Faszination für Züge oder möchtest sehen, wie sie entwickelt und gebaut werden? Dann komm mit zur exklusiven Werksführung bei Stadler Rail in Bussnang. Während rund einer Stunde erhältst du einen Einblick in die Produktion und kannst hautnah miterleben, was hinter den Kulissen geschieht. Danach gibt es einen Apéro und Raum für all deine brennenden Fragen, die du dir ehrlich von Ingenieurinnen beantworten lassen kannst.",
+        "date_display": "Dienstag, 1. Dezember 2026, ab 16:00 Uhr (ca. 1,5–2 Stunden)",
+        "location": "Stadler Rail, Bussnang – genaue Angaben erhältst du nach der Anmeldung",
+        "details": "Werksführung & Apéro · Teilnahme kostenlos · Begrenzte Plätze",
+        "register_url": "https://forms.cloud.microsoft/pages/responsepage.aspx?id=nZ8aXR8gEEq5g0Uc9ly8Hp2jtfFD8HJOldpixKvlCmlUNk5JRkJQWFdYRldNVDNKWjVSOEVCVlBMOC4u&origin=lprLink&route=shorturl"
+      },
+      {
         "id": "game-night-nov12",
         "date": "2026-11-12",
         "day": "12",
@@ -51,7 +64,7 @@
         "date_display": "Donnerstag, 12. November 2026, ab 19:00 Uhr",
         "map_url": "https://www.google.com/maps/search/?api=1&query=Technikumstrasse+9%2C+8400+Winterthur",
         "location": "Raum TE602, Gebäude TE, Technikumstrasse 9, Winterthur",
-        "details": "Brettspiele & gemütliche Runde",
+        "details": "Karten- & Brettspiele · Gratis Snacks & Drinks",
         "register_url": "https://forms.cloud.microsoft/pages/responsepage.aspx?id=nZ8aXR8gEEq5g0Uc9ly8Hp2jtfFD8HJOldpixKvlCmlUN1NORUJLTktGWFZKSTNLNzNTNUZESTNCMS4u&origin=lprLink&route=shorturl"
       },
       {

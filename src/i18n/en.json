@@ -41,6 +41,19 @@
     "past_title": "Past Events",
     "list": [
       {
+        "id": "stadler-rail-dec1",
+        "date": "2026-12-01",
+        "day": "1",
+        "month": "Dec",
+        "subtitle": "She Shapes Tech x Stadler Rail",
+        "title": "Next Stop: Stadler Rail",
+        "desc": "Fascinated by trains, or curious to see how they are developed and built? Then join us for an exclusive factory tour at Stadler Rail in Bussnang. For about an hour, you'll get an inside look at production and experience up close what happens behind the scenes. Afterwards, there's an apéro and space for all your burning questions – answered honestly by women engineers.",
+        "date_display": "Tuesday, 1 December 2026, from 16:00 (approx. 1.5–2 hours)",
+        "location": "Stadler Rail, Bussnang – exact details will be sent after registration",
+        "details": "Factory tour & apéro · Free of charge · Limited spots",
+        "register_url": "https://forms.cloud.microsoft/pages/responsepage.aspx?id=nZ8aXR8gEEq5g0Uc9ly8Hp2jtfFD8HJOldpixKvlCmlUNk5JRkJQWFdYRldNVDNKWjVSOEVCVlBMOC4u&origin=lprLink&route=shorturl"
+      },
+      {
         "id": "game-night-nov12",
         "date": "2026-11-12",
         "day": "12",
@@ -51,7 +64,7 @@
         "date_display": "Thursday, 12 November 2026, from 19:00",
         "map_url": "https://www.google.com/maps/search/?api=1&query=Technikumstrasse+9%2C+8400+Winterthur",
         "location": "Room TE602, Building TE, Technikumstrasse 9, Winterthur",
-        "details": "Board games & a cosy get-together",
+        "details": "Card & board games · Free snacks & drinks",
         "register_url": "https://forms.cloud.microsoft/pages/responsepage.aspx?id=nZ8aXR8gEEq5g0Uc9ly8Hp2jtfFD8HJOldpixKvlCmlUN1NORUJLTktGWFZKSTNLNzNTNUZESTNCMS4u&origin=lprLink&route=shorturl"
       },
       {
