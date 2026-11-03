@@ -47,11 +47,12 @@
         "month": "Nov",
         "subtitle": "She Shapes Tech",
         "title": "GameNight",
-        "desc": "A cosy evening of board games and good conversations with fellow students. Whether you're a strategy pro or just play now and then – all you need is to be up for a good round. Come on your own, leave with new teammates.",
+        "desc": "Do you love card or board games, are you looking for new people to play with, or do you just want a cosy evening away from study stress? Then come along! Whether you're a game queen or a casual player – everyone is welcome at our GameNight. And the best part: snacks and drinks are on us ;)",
         "date_display": "Thursday, 12 November 2026, from 19:00",
         "map_url": "https://www.google.com/maps/search/?api=1&query=Technikumstrasse+9%2C+8400+Winterthur",
         "location": "Room TE602, Building TE, Technikumstrasse 9, Winterthur",
-        "details": "Board games & a cosy get-together · More info to follow"
+        "details": "Board games & a cosy get-together",
+        "register_url": "https://forms.cloud.microsoft/pages/responsepage.aspx?id=nZ8aXR8gEEq5g0Uc9ly8Hp2jtfFD8HJOldpixKvlCmlUN1NORUJLTktGWFZKSTNLNzNTNUZESTNCMS4u&origin=lprLink&route=shorturl"
       },
       {
         "id": "welcome-apero-oct1",
